@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Eike Petersen | Technical University of Denmark"
+title                    : "Eike Petersen"
 title_separator          : "-"
 name                     : &name "Eike Petersen"
 description              : &description "Postdoctoral researcher at Technical University of Denmark (DTU)"
