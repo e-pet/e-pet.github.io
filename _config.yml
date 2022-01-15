@@ -21,9 +21,9 @@ future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : disqus # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            :
+    shortname            : e-pet
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -104,11 +104,11 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/eike-petersen-b311389a/"
+  linkedin         : "eike-petersen-b311389a/"
   orcid            : "https://orcid.org/0000-0003-0097-3868"
   pinterest        :
   soundcloud       :
-  stackoverflow    : "https://stackoverflow.com/users/2207840/jhin"
+  stackoverflow    : "2207840/jhin"
   steam            :
   tumblr           :
   twitter          : "eikepetersen1"
