@@ -20,5 +20,8 @@ main:
  
   - title: "Code"
     url: /code/
+    
+  - title: "Responsibility"
+    url: /responsibility/    
 #  - title: "Guide"
 #    url: /markdown/
