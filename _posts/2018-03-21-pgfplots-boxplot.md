@@ -11,8 +11,8 @@ Recently, I wanted to create boxplots from a data file for a paper I was writing
 
 To save others the hassle, here's the result of my efforts ([link to PDF version](/images/2018-03-21-pgfplots-boxplot.pdf)):
 
-<figure style="width: 80px" class="align-center">
-  <a href="/images/2018-03-21-pgfplots-boxplot.png" title="Pgfplots Boxplot" alt="Pgfplots Boxplot">
+<figure style="width: 250px" class="align-center">
+  <a href="/images/2018-03-21-pgfplots-boxplot.png" title="Pgfplots Boxplot Example" alt="Pgfplots Boxplot Example">
   <img src="/images/2018-03-21-pgfplots-boxplot.png"></a>
 </figure>
 
