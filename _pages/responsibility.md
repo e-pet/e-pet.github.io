@@ -9,7 +9,7 @@ redirect_from:
 
 There are many ways to act responsibly as a researcher, and I try to follow at least a few of them.
 I think this is one of the many places where the 'boy scout rule' is applicable:
-> Leave every place in better condition than you found it in.
+> Leave every place better than you found it.
 
 So, when feeling overwhelmed by the challenge of doing everything *right*, just try to start with *something* and make it a little bit better.
 
