@@ -73,4 +73,4 @@ redirect_from:
 
 
 ## Code
-See [here](/Code/).
+See [here](/code/).
