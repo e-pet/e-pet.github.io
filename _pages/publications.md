@@ -7,7 +7,7 @@ redirect_from:
 
 {% include base_path %}
 
-### Journal publications
+## Journal publications
 #### 2021
 - Graßhoff, Petersen, Farquharson, Kustermann, Kabitz, Rostalski, Walterspacher: Surface EMG-based quantification of inspiratory effort: a quantitative comparison with Pes. *Critical Care, vol. 25, no. 441, 2021.* [[Link]](https://ccforum.biomedcentral.com/articles/10.1186/s13054-021-03833-w).
 
@@ -22,11 +22,11 @@ redirect_from:
 - Petersen, Buchner, Eger, Rostalski: Convolutive blind source separation of surface EMG measurements of the respiratory muscles. *Biomedical Engineering/Biomedizinische Technik, no. 62, pp. 171-181, 2017.* [[Link]](https://www.degruyter.com/document/doi/10.1515/bmt-2016-0092/html).
 
 
-### Preprints (not peer-reviewed)
+## Preprints (not peer-reviewed)
 - Petersen, Potdevin, Mohammadi, Zidowitz, Breyer, Nowotka, Henn, Pechmann, Leucker, Rostalski, Herzog: Responsible and Regulatory Conform Machine Learning for Medicine: A Survey of Technical Challenges and Solutions. [[arxiv link]](https://arxiv.org/abs/2107.09546).
 
 
-### Conference publications
+## Conference publications
 
 #### 2020
 - Petersen, Graßhoff, Eger, Rostalski: Surface EMG-based Estimation of Breathing Effort for Neurally Adjusted Ventilation Control. *Proceedings of the 21st IFAC World Congress, 2020.* [[Link]](https://www.sciencedirect.com/science/article/pii/S2405896320309654).
@@ -48,7 +48,7 @@ redirect_from:
 - Eike Petersen: A Mathematical Model of Surface Electromyographic Measurements. *Proceedings of the Workshop Biosignal Processing, Germany, 2016.*
 
 
-### Conference abstracts
+## Conference abstracts
 #### 2020
 - Multusch, Petersen: A mathematical model for the respiratory central pattern generator. *Workshop Automation in Medicine (Automatisiering in der Medizintechnik, AUTOMED), Lübeck, 2020.* 
 
@@ -58,13 +58,13 @@ redirect_from:
 - Petersen, Kahl, Rostalski: Electromyography as a tool for personalized rehabilitation. *Annual Conference of the German Society for Biomedical Engineering (DGBMT), Aachen, 2018.*
 
 
-### Theses
+## Theses
 - Eike Petersen: Model-based Probabilistic Inference for Monitoring Respiratory Effort using the Surface Electromyogram. *Ph.D. thesis, University of Lübeck, currently under review.*
 - Eike Petersen: Integrative Mathematical Modelling and Simulation of Surface Electromyographic Measurements. *M.Sc. thesis, University of Hamburg, 2015.*
 - Eike Petersen: Patient Airway Pressure Determination in Medical Ventilators using Transmission Line Theory. *B.Sc. thesis, Technical University of Hamburg, 2012.*
 
 
-### Patent applications
+## Patent applications
 - Eger, Rostalski, Petersen, Graßhoff: Process and signal processing unit for determining a pneumatic parameter with the use of a lung-mechanical model and of a gradient model. DE102020133460A1 / US20210205561A1, 2020.
 - Eger, Petersen, Graßhoff, Rostalski: Method and signal processing unitfordetermining the respiratory activityofa patient. DE112020000233A5 / WO2021052791A1, 2019.
 - Eger, Kahl, Rostalski, Petersen: Apparatus, method, and computer program for influencing the respiration of a person. DE112020000114A5 / WO2020188069A1, 2019.
@@ -72,5 +72,5 @@ redirect_from:
 - Kahl, Petersen, Graßhoff, Rostalski: Method and device for determining a respiratory or cardiogenic signal. DE112020000232A5 / WO2021063601A1, 2019.
 
 
-### Code
+## Code
 See [here](/Code/).
