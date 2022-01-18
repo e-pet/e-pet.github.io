@@ -29,4 +29,4 @@ My research in this context spanned mathematical modeling, signal processing, pa
 See my previous [publications](publications.md) for some of the work we did.
 
 
-[^1]: I am not saying I believe that is a good idea. I'm just saying: it's likely to happen.
+[^1]: I am not saying I believe that is a good idea. I'm just saying: it's likely to happen. That does not mean that we, as a society, should't [actively decide](https://afog.berkeley.edu/programs/the-refusal-conference#overview) whether we want it to happen or not.
