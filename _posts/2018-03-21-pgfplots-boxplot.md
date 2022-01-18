@@ -19,7 +19,7 @@ Some "features" of this plot that took me a while to set up correctly:
 * Clean plot without any unnecessary clutter
 * Getting pgfplots to work with data in row format (instead of column format, as expected by the boxplot  function)
 
-This is the code I used to generate the figure ([link to code file](/snippets/2018-03-21-pgfplots-boxplot.tex)):
+This is the code I used to generate the figure ([link to code file](https://github.com/e-pet/e-pet.github.io/blob/master/snippets/2018-03-21-pgfplots-boxplot.tex):
 ``` TeX
 \documentclass{standalone}
 \usepackage{pgfplots}
