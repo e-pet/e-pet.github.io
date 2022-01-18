@@ -10,7 +10,8 @@ redirect_from:
 There are many ways to act responsibly as a researcher, and I try to follow at least a few of them.
 I think this is one of the many places where the 'boy scout rule' is applicable:
 > Leave every place in better condition than you found it in.
-- when feeling overwhelmed by the challenge of doing everything *right*, just try to start with *something* and make it a little bit better.
+
+So, when feeling overwhelmed by the challenge of doing everything *right*, just try to start with *something* and make it a little bit better.
 
 Some things **ML researchers** can do:
 - _evaluate_ ML models thoroughly to prevent hugely exaggerated performance claims [[1]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7222643/), [[2]](https://www.jclinepi.com/article/S0895-4356(18)31081-3/fulltext), [[3]](https://arxiv.org/abs/2011.03395)
