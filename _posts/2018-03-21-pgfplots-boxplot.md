@@ -11,7 +11,7 @@ Recently, I wanted to create boxplots from a data file for a paper I was writing
 
 To save others the hassle, here's the result of my efforts ([link to PDF version](/images/2018-03-21-pgfplots-boxplot.pdf)):
 
-![Boxplot generated using pgfplots](/images/2018-03-21-pgfplots-boxplot.png){:height="400px"}
+![Boxplot generated using pgfplots](/images/2018-03-21-pgfplots-boxplot.png){:height="100px"}
 
 Some "features" of this plot that took me a while to set up correctly:
 * Box design with fill color and black border
