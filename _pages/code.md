@@ -1,3 +1,13 @@
+---
+title: "Code"
+permalink: /code/
+author_profile: true
+redirect_from:
+  - /code.html
+---
+
+{% include base_path %}
+
 ### Toolboxes
 - **semgsim**, an R package that generates realistic surface electromyographic (sEMG) and force signals by modeling muscle physiology, and motor unit pool organization. [[Link]](https://github.com/ime-luebeck/semgsim)
 - A **cardiac artifact removal toolnox** that provides Matlab implementations of a number of algorithms for removing cardiac interference from surface EMG measurements, as well as metrics and two exemplary datasets for evaluating their respective accuracy. [[Link]](https://github.com/e-pet/ecg-removal)
