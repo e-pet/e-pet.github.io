@@ -9,10 +9,10 @@ redirect_from:
 {% include base_path %}
 
 ### Work experience
-* **2021-today:** Post-doctoral researcher, DTU Compute, Technical University of Denmark.
-* **2015-2021:** Research Associate / Ph.D. student, Institute for Electrical Engineering in Medicine, University of Lübeck, Germany.
-* **2009-2015:** Student trainee, Dräger Medical, Lübeck, Germany.
-* **2011:** Research + teaching assistant, Technical University of Hamburg, Germany.
+* *2021-today:* Post-doctoral researcher, DTU Compute, Technical University of Denmark.
+* *2015-2021:* Research Associate / Ph.D. student, Institute for Electrical Engineering in Medicine, University of Lübeck, Germany.
+* *2009-2015:* Student trainee, Dräger Medical, Lübeck, Germany.
+* *2011:* Research + teaching assistant, Technical University of Hamburg, Germany.
 
 ### Education
 * IEEE-SPS Summer school on Signal Processing for Autonomous Systems, Arenzano, Italy, 2019.
