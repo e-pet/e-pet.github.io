@@ -1,5 +1,4 @@
 ---
-layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
@@ -9,51 +8,17 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+#### Work experience
+* **2021-today** Post-doctoral researcher, DTU Compute, Technical University of Denmark
+* **2015-2021** Research Associate / Ph.D. student, Institute for Electrical Engineering in Medicine, University of Lübeck, Germany
+* **2009-2015** Student trainee, Dräger Medical, Lübeck, Germany
+* **2011** Research + teaching assistant, Technical University of Hamburg, Germany
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+#### Education
+* IEEE-SPS Summer school on Signal Processing for Autonomous Systems, Arenzano, Italy, 2019
+* Visiting scholar, Lund Center for Control of Complex Engineering Systems (LCCC), Lund University, Sweden, 2018
+* M.Sc. in Industrial Mathematics, University of Hamburg, Germany, 2015
+* ERASMUS exchange, INSA Toulouse, France, 2013-14
+* B.Sc. in Computer Science and Engineering, Technical University of Hamburg, Germany, 2012
+* Summer school in Applied Mathematics and Engineering, University of Sarajevo, Bosnia and Herzegowina, 2011
+* German Abitur, Pinneberg, Germany
