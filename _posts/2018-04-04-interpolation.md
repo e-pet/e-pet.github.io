@@ -69,7 +69,7 @@ Here it becomes apparent that the Akima interpolation really does not result in 
 Blah...
 Pointer regression...
 
-[The code for reproducing the figures in this post is available on my GitHub page.](/snippets/2018-04-04-interpolation.py)
+[The code for reproducing the figures in this post is available on my GitHub page.](https://github.com/e-pet/e-pet.github.io/blob/master/snippets/2018-04-04-interpolation.py)
 
 ### References
 * [Wolfram Mathworld: Cubic Spline](http://mathworld.wolfram.com/CubicSpline.html)
