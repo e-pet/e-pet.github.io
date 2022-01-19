@@ -83,7 +83,7 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: mix(#fff, $gray, 25%);
+      color: #0d3b66; //mix(#fff, $gray, 25%);
       border: 1px solid $light-gray;
       border-radius: 0;
 
@@ -181,7 +181,7 @@
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
-    color: $masthead-link-color;
+    color: #0d3b66; //$masthead-link-color;
     text-decoration: none;
 
     &:hover {
@@ -197,7 +197,7 @@
     border: 0;
     outline: none;
     background-color: $primary-color;
-    color: #fff;
+    color: #0d3b66; //#fff;
     cursor: pointer;
   }
 
@@ -371,7 +371,7 @@
 
 .toc {
   font-family: $sans-serif-narrow;
-  color: $gray;
+  color: #0d3b66; //$gray;
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: #fff;
@@ -398,7 +398,7 @@
   a {
     display: block;
     padding: 0.5rem 1rem;
-    color: $gray;
+    color: #0d3b66; //$gray;
     font-size: $type-size-7;
     font-weight: bold;
     line-height: 1.5;
