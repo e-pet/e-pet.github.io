@@ -83,7 +83,7 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: mix(#0d3b66, $gray, 25%);//mix(#fff, $gray, 25%);
+      color: mix(#fff, $gray, 25%);
       border: 1px solid $light-gray;
       border-radius: 0;
 
@@ -181,11 +181,11 @@
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
-    color: mix(#0d3b66, $gray, 25%);; //$masthead-link-color;
+    color: $masthead-link-color;
     text-decoration: none;
 
     &:hover {
-      color: #0d3b66; //$masthead-link-color-hover;
+      color: $masthead-link-color-hover; // here?
     }
   }
 
@@ -197,7 +197,7 @@
     border: 0;
     outline: none;
     background-color: $primary-color;
-    color: #0d3b66; //#fff;
+    color: #fff;
     cursor: pointer;
   }
 
@@ -232,7 +232,7 @@
         left: 0;
         bottom: 0;
         height: 4px;
-        background: mix(#fff, $primary-color, 50%);
+        background: #0d3b66; //mix(#fff, $primary-color, 50%);
         width: 100%;
         -webkit-transition: $global-transition;
         transition: $global-transition;
@@ -279,7 +279,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: $border-color transparent;
+      border-color: #0d3b66; //$border-color transparent;
       display: block;
       z-index: 0;
     }
@@ -292,7 +292,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: #fff transparent;
+      border-color: #0d3b66;  //#fff transparent;
       display: block;
       z-index: 1;
     }
@@ -323,7 +323,7 @@
   a {
     display: block;
     padding: 0.125em 0;
-    color: #0d3b66; //inherit;
+    color: inherit;
 
     &:hover {
       text-decoration: underline;
@@ -371,7 +371,7 @@
 
 .toc {
   font-family: $sans-serif-narrow;
-  color: #0d3b66; //$gray;
+  color: $gray;
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: #fff;
@@ -398,11 +398,11 @@
   a {
     display: block;
     padding: 0.5rem 1rem;
-    color: #0d3b66; //$gray;
+    color: $gray;
     font-size: $type-size-7;
     font-weight: bold;
     line-height: 1.5;
-    border-bottom: 1px solid #0d3b66; //$border-color;
+    border-bottom: 1px solid $border-color;
 
     &:hover {
       color: #000;
