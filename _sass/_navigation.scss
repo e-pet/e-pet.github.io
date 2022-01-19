@@ -83,12 +83,12 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: #0d3b66; //mix(#fff, $gray, 25%);
+      color: mix(#0d3b66, $gray, 25%);//mix(#fff, $gray, 25%);
       border: 1px solid $light-gray;
       border-radius: 0;
 
       &:hover {
-        color: $link-color-hover;
+        color: #0d3b66;//$link-color-hover;
       }
 
       &.current {
@@ -181,11 +181,11 @@
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
-    color: #0d3b66; //$masthead-link-color;
+    color: mix(#0d3b66, $gray, 25%);; //$masthead-link-color;
     text-decoration: none;
 
     &:hover {
-      color: $masthead-link-color-hover;
+      color: #0d3b66; //$masthead-link-color-hover;
     }
   }
 
