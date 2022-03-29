@@ -10,7 +10,7 @@ redirect_from:
 
 ### Toolboxes
 - **semgsim**, an R package that generates realistic surface electromyographic (sEMG) and force signals by modeling muscle physiology, and motor unit pool organization. [[Link]](https://github.com/ime-luebeck/semgsim)
-- A **cardiac artifact removal toolnox** that provides Matlab implementations of a number of algorithms for removing cardiac interference from surface EMG measurements, as well as metrics and two exemplary datasets for evaluating their respective accuracy. [[Link]](https://github.com/e-pet/ecg-removal)
+- A **cardiac artifact removal toolbox** that provides Matlab implementations of a number of algorithms for removing cardiac interference from surface EMG measurements, as well as metrics and two exemplary datasets for evaluating their respective accuracy. [[Link]](https://github.com/ime-luebeck/ecg-removal)
 - **KFS-suite**, a collection of linear and nonlinear Kalman filter and smoother implementations in Matlab. The implementation can deal with missing data, multiple measurements, time-varying systems, and state constraints (a simple projection-based approach is implemented). A state-of-the-art iterated approximation scheme is implemented for nonlinear systems. [[Link]](https://github.com/e-pet/kfs_suite)
 
 ### Matlab utilities
