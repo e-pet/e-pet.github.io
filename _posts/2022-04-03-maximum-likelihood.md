@@ -22,7 +22,7 @@ Let's go.
 The idea is simple: given a model $q(y \vert x; \theta)$ of the conditional distribution of a target variable $y$ given input data $x$, find the set of parameters $\theta_{ML}$ that maximizes the likelihood of observing the data as they were observed:
 
 $$
-\theta_{ML} = \arg\max_{\theta} q(Y \vert X; \theta),
+\theta_{\text{ML}} = \arg\max_{\theta} q(Y \vert X; \theta),
 $$
 
 where $Y$ and $X$ denote vectors (or matrices) representing a given dataset.
@@ -31,7 +31,7 @@ If the individual observations $(y_i, x_i)$ are assumed independent of one anoth
 
 $$
 \begin{align}
-\theta_{ML} &= \arg\max_{\theta} \prod_{i=1}^N q(y_i \vert x_i; \theta), \\
+\theta_{\text{ML}} &= \arg\max_{\theta} \prod_{i=1}^N q(y_i \vert x_i; \theta), \\
 &= \arg\max_{\theta} \ln \left(\prod_{i=1}^N q(y_i \vert x_i; \theta) \right) \\
 &= \arg\max_{\theta} \sum_{i=1}^N \ln q(y_i \vert x_i; \theta) \\
 &= \arg\min_{\theta} - \sum_{i=1}^N \ln q(y_i \vert x_i; \theta).
@@ -45,7 +45,7 @@ Maximum likelihood estimation can be cast within the extremely broad framework o
 
 $$
 \begin{align}
-\theta_{ML} &= \arg\min_{\theta} - \sum_{i=1}^N \ln q(y_i \vert x_i; \theta)\\
+\theta_{\text{ML}} &= \arg\min_{\theta} - \sum_{i=1}^N \ln q(y_i \vert x_i; \theta)\\
 &= \arg\min_{\theta} E_{p_{emp}}\left[-\ln q(y|x,\mathbf{\theta})\right],
 \end{align}
 $$
@@ -70,10 +70,10 @@ H(p,q)&= -E_p\left[\ln q(x)\right] \\
 &= -E_p\left[\ln p(x) + \ln \frac{q(x)}{p(x)}\right] \\
 &= -E_p\left[\ln p(x) - \ln \frac{p(x)}{q(x)}\right] \\
 &= -E_p\left[\ln p(x)\right] + E_p\left[\frac{p(x)}{q(x)}\right] \\
-&= H(p) + D_{KL}(p||q),
+&= H(p) + D_{KL}(p\vert\vert q),
 \end{align}$$
 
-where $H(p)$ denotes the [*entropy*](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of the distribution $p$ and $D_{KL}(p||q)$ the Kullback-Leibler divergence.
+where $H(p)$ denotes the [*entropy*](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of the distribution $p$ and $D_{KL}(p\vert\vert q)$ the Kullback-Leibler divergence.
 
 Again choosing $p=p_{\text{emp}}(y \vert x)$ and $q=q(y \vert x; \theta)$, and noting that $H(p)$ is independent of our choice of model parameters $\theta$, we observe that maximizing the likelihood of the data is also identical to minimizing the Kullback-Leibler divergence between the empirical distribution $p_{\text{emp}}(y \vert x)$ and the model $q(y \vert x; \theta)$. (We would, of course, prefer to minimize the divergence with respect to the true, data-generating process $p(y \vert x)$ instead of the empirical distribution. However, this is obviously infeasible since $p(y \vert x)$ is unknown.)
 
@@ -81,7 +81,7 @@ Again choosing $p=p_{\text{emp}}(y \vert x)$ and $q=q(y \vert x; \theta)$, and n
 Known since the eighteenth century, *least-squares estimation* is possibly the single most famous parameter estimation paradigm. It turns out that under mild assumptions, least-squares estimation coincides with maximum likelihood estimation. For an arbitrary, possibly nonlinear regression model $f(x; \theta)$, we have
 
 $$
-\theta_{LS} = \arg\min_\theta \sum_{i=1}^N || y_i - f(x_i; \theta) || ^2.
+\theta_{\text{LS}} = \arg\min_\theta \sum_{i=1}^N || y_i - f(x_i; \theta) || ^2.
 $$
 
 If we now assume a Gaussian noise model 
@@ -94,7 +94,7 @@ we obtain for the maximum likelihood estimator that
 
 $$
 \begin{align}
-\theta_{ML}, \sigma_{\varepsilon, ML} &= \arg \min_{\theta, \sigma_{\varepsilon}} - \sum_{i=1}^N \ln q(y_i \vert x_i, \theta, \sigma_{\varepsilon}) \\
+\theta_{\text{ML}}, \sigma_{\varepsilon, \text{ML}} &= \arg \min_{\theta, \sigma_{\varepsilon}} - \sum_{i=1}^N \ln q(y_i \vert x_i, \theta, \sigma_{\varepsilon}) \\
 &= \arg \min_{\theta, \sigma_{\varepsilon}} - \sum_{i=1}^N \ln \frac{1}{\sqrt{2\pi \sigma_{\varepsilon}^2}} \mathrm{e}^{-\frac{1}{2 \sigma_{\varepsilon}^2} (y_i - f(x_i; \theta))^2} \\
 &= \arg \min_{\theta, \sigma_{\varepsilon}} \sum_{i=1}^N (y_i - f(x_i; \theta))^2 + \frac{N}{2} \ln 2 \pi \sigma_{\varepsilon}^2.
 \end{align}
@@ -103,7 +103,7 @@ $$
 Since the optimization with respect to the regression parameters $\theta$ can be carried out independently of the value of $\sigma_{\varepsilon}$, it follows that
 
 $$
-\theta_{ML} = \theta_{LS}
+\theta_{\text{ML}} = \theta_{\text{LS}}
 $$
 
 for arbitrary functions $f(x; \theta)$. (Again, this relies on the assumption of a Gaussian noise model.)
