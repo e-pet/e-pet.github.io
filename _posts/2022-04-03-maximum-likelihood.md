@@ -70,10 +70,10 @@ H(p,q)&= -E_p\left[\ln q(x)\right] \\
 &= -E_p\left[\ln p(x) + \ln \frac{q(x)}{p(x)}\right] \\
 &= -E_p\left[\ln p(x) - \ln \frac{p(x)}{q(x)}\right] \\
 &= -E_p\left[\ln p(x)\right] + E_p\left[\frac{p(x)}{q(x)}\right] \\
-&= H(p) + D_{KL}(p\vert\vert q),
+&= H(p) + D_{\text{KL}}(p\vert\vert q),
 \end{align}$$
 
-where $H(p)$ denotes the [*entropy*](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of the distribution $p$ and $D_{KL}(p\vert\vert q)$ the Kullback-Leibler divergence.
+where $H(p)$ denotes the [*entropy*](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of the distribution $p$ and $D_{\text{KL}}(p\vert\vert q)$ the Kullback-Leibler divergence.
 
 Again choosing $p=p_{\text{emp}}(y \vert x)$ and $q=q(y \vert x; \theta)$, and noting that $H(p)$ is independent of our choice of model parameters $\theta$, we observe that maximizing the likelihood of the data is also identical to minimizing the Kullback-Leibler divergence between the empirical distribution $p_{\text{emp}}(y \vert x)$ and the model $q(y \vert x; \theta)$. (We would, of course, prefer to minimize the divergence with respect to the true, data-generating process $p(y \vert x)$ instead of the empirical distribution. However, this is obviously infeasible since $p(y \vert x)$ is unknown.)
 
