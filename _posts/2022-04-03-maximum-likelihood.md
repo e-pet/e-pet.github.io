@@ -1,5 +1,5 @@
 ---
-title: Beautiful boxplots in pgfplots
+title: Maximum likelihood, cross-entropy, risk minimization
 permalink: /posts/2022/2022-04-03-maximum-likelihood/
 date: 2022-04-03
 tags:
