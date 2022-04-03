@@ -125,22 +125,22 @@ H(p,q) &= -E_p[\ln q] \\
 $$
 
 ### References
-Bottou (1991), Stochastic Gradient Learning in Neural Networks. https://leon.bottou.org/publications/pdf/nimes-1991.pdf
+Bottou (1991), Stochastic Gradient Learning in Neural Networks. [Link](https://leon.bottou.org/publications/pdf/nimes-1991.pdf)
 
 Ljung (1999), System Identification: Theory for the User. Prentice Hall, second edition edition.
 
 Bishop (2006), Pattern Recognition and Machine Learning. Springer.
 
-Nowozin (2015), How good are your beliefs? Part 1: Scoring Rules. http://www.nowozin.net/sebastian/blog/how-good-are-your-beliefs-part-1-scoring-rules.html
+Nowozin (2015), How good are your beliefs? Part 1: Scoring Rules. [Link](http://www.nowozin.net/sebastian/blog/how-good-are-your-beliefs-part-1-scoring-rules.html)
 
-Goodfellow, Bengio, Courville (2016), Deep Learning. https://www.deeplearningbook.org/
+Goodfellow, Bengio, Courville (2016), Deep Learning. [Link](https://www.deeplearningbook.org/)
 
-Guo, Pleiss, Sun, Weinberger (2017), On Calibration of Modern Neural Networks, https://arxiv.org/pdf/1706.04599.pdf
+Guo, Pleiss, Sun, Weinberger (2017), On Calibration of Modern Neural Networks. [Link](https://arxiv.org/pdf/1706.04599.pdf)
 
-Liu et al. (2018), The implicit fairness criterion of unconstrained learning. https://arxiv.org/pdf/1808.10013.pdf
+Liu et al. (2018), The implicit fairness criterion of unconstrained learning. [Link](https://arxiv.org/pdf/1808.10013.pdf)
 
-Harrell (2020), Damage Caused by Classification Accuracy and Other Discontinuous Improper Accuracy Scoring Rules. [[https://www.fharrell.com/post/class-damage/]]
+Harrell (2020), Damage Caused by Classification Accuracy and Other Discontinuous Improper Accuracy Scoring Rules. [Link](https://www.fharrell.com/post/class-damage/)
 
-Ashukha et al. (2021), Pitfalls of in-domain uncertainty estimation and ensembling in deep learning. [https://arxiv.org/pdf/2002.06470.pdf]
+Ashukha et al. (2021), Pitfalls of in-domain uncertainty estimation and ensembling in deep learning. [Link](https://arxiv.org/pdf/2002.06470.pdf)
 
 ------
