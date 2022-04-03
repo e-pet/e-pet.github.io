@@ -139,8 +139,8 @@ Guo, Pleiss, Sun, Weinberger (2017), On Calibration of Modern Neural Networks, h
 
 Liu et al. (2018), The implicit fairness criterion of unconstrained learning. https://arxiv.org/pdf/1808.10013.pdf
 
-Harrell (2020), Damage Caused by Classification Accuracy and Other Discontinuous Improper Accuracy Scoring Rules. https://www.fharrell.com/post/class-damage/
+Harrell (2020), Damage Caused by Classification Accuracy and Other Discontinuous Improper Accuracy Scoring Rules. [[https://www.fharrell.com/post/class-damage/]]
 
-Ashukha et al. (2021), Pitfalls of in-domain uncertainty estimation and ensembling in deep learning. https://arxiv.org/pdf/2002.06470.pdf
+Ashukha et al. (2021), Pitfalls of in-domain uncertainty estimation and ensembling in deep learning. [https://arxiv.org/pdf/2002.06470.pdf]
 
 ------
