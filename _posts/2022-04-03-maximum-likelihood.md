@@ -8,7 +8,7 @@ tags:
   - Calibration
 ---
 
-... *really*, yet another post about about maximum likelihood (ML) estimation? Well - yes; I could not find a source that summarized exactly the things I needed to know, so here it is. What will you find?
+... *really*, yet another post about about maximum likelihood (ML) estimation? Well – yes; I could not find a source that summarized exactly the things I needed to know, so here it is. What will you find?
 
 - A derivation of maximum likelihood estimation
 - A derivation of its equivalence to cross-entropy minimization, empirical risk minimization, and least squares estimation
@@ -67,7 +67,7 @@ H(p,q)&= -E_p\left[\ln q(x)\right] \\
 \end{align}$$
 where $H(p)$ denotes the [*entropy*](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of the distribution $p$ and $D_{KL}(p||q)$ the Kullback-Leibler divergence.
 
-Again choosing $p=p_{\text{emp}}(y | x)$ and $q=q(y | x; \theta)$, and noting that $H(p)$ is independent of our choice of model parameters $\theta$, we observe that maximizing the likelihood of the data is also identical to minimizing the Kullback-Leibler divergence between the empirical distribution $p_{emp}(y | x)$ and the model $q(y | x; \theta)$. (We would, of course, prefer to minimize the divergence with respect to the true, data-generating process $p(y | x)$ instead of the empirical distribution. However, this is obviously infeasible since $p(y | x)$ is unknown.)
+Again choosing $p=p_{\text{emp}}(y | x)$ and $q=q(y | x; \theta)$, and noting that $H(p)$ is independent of our choice of model parameters $\theta$, we observe that maximizing the likelihood of the data is also identical to minimizing the Kullback-Leibler divergence between the empirical distribution $p_{\text{emp}}(y | x)$ and the model $q(y | x; \theta)$. (We would, of course, prefer to minimize the divergence with respect to the true, data-generating process $p(y | x)$ instead of the empirical distribution. However, this is obviously infeasible since $p(y | x)$ is unknown.)
 
 ### Maximum likelihood and least squares
 Known since the eighteenth century, *least-squares estimation* is possibly the single most famous parameter estimation paradigm. It turns out that under mild assumptions, least-squares estimation coincides with maximum likelihood estimation. For an arbitrary, possibly nonlinear regression model $f(x; \theta)$, we have
@@ -93,7 +93,7 @@ $$
 for arbitrary functions $f(x; \theta)$. (Again, this relies on the assumption of a Gaussian noise model.)
 
 ### Consistency, efficiency, calibration
-Maximum likelihood estimation is *asymptotically consistent*: if there is a unique *true* value $\theta^*$ for which $p(y|x) = q(y|x; \theta^*)$ (in other words, there is no *model mismatch* or *model error*), then a maximum likelihood estimator converges towards that value as the number of samples increases. (However, notice that even in the case where there *is* model mismatch, we retain the reassuring property that the ML estimator minimizes the KL divergence between the empirical data distribution and the identified model.)
+Maximum likelihood estimation is *asymptotically consistent*: if there is a unique *true* value $\theta^{*}$ for which $p(y | x) = q(y | x; \theta^{*})$ (in other words, there is no *model mismatch* or *model error*), then a maximum likelihood estimator converges towards that value as the number of samples increases. (However, notice that even in the case where there *is* model mismatch, we retain the reassuring property that the ML estimator minimizes the KL divergence between the empirical data distribution and the identified model.)
 
 Moreover, maximum likelihood estimation is *asymptotically efficient*, meaning that for large sample numbers, no consistent estimator achieves a lower mean squared parameter error than the maximum likelihood estimator. (In other words, it [reaches](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation#Efficiency) the [Cramér-Rao lower bound](https://en.wikipedia.org/wiki/Cram%C3%A9r%E2%80%93Rao_bound).)
 
@@ -101,7 +101,7 @@ Finally, ML estimators also tend to be *well-calibrated*, meaning that
 $$
 p(y | x, R=r) = r \quad \forall\, r,
 $$
-where $R$ denotes the (risk score) output of the trained model. This is readily apparent from the fact that an ML-optimal model minimizes the KL divergence from the data-generating distribution, as discussed above: the optimum is only obtained if $p(y|x) = q(y|x; \theta^*)$. (For a more detailed discussion about how maximum likelihood estimation implies calibration, refer to [Liu et al. 2019](https://arxiv.org/pdf/1808.10013.pdf). For the same reason, [the negative log likelihood has also been proposed as a *calibration measure*](https://arxiv.org/pdf/2002.06470.pdf). Notice, however, that it is not a pure measure of calibration; instead, it measures a mixture of calibration and *separation*.)
+where $R$ denotes the (risk score) output of the trained model. This is readily apparent from the fact that an ML-optimal model minimizes the KL divergence from the data-generating distribution, as discussed above: the optimum is only obtained if $p(y|x) = q(y|x; \theta^{*})$. (For a more detailed discussion about how maximum likelihood estimation implies calibration, refer to [Liu et al. 2019](https://arxiv.org/pdf/1808.10013.pdf). For the same reason, [the negative log likelihood has also been proposed as a *calibration measure*](https://arxiv.org/pdf/2002.06470.pdf). Notice, however, that it is not a pure measure of calibration; instead, it measures a mixture of calibration and *separation*.)
 
 ### Properties of the optimization problem
 The likelihood landscape (as a function of the parameters $\theta$ to be optimized) is, in general, non-convex. (It also depends on the way the model is parameterized.) Thus, global optimization strategies are required if local minima are to be escaped. (One of the various benefits of *stochastic* gradient descent is that it is [capable of escaping local minima](https://leon.bottou.org/publications/pdf/nimes-1991.pdf) to some degree. It is, however, of course not a true global optimization strategy.) 
