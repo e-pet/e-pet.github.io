@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Eike Petersen"
   avatar           : "3244online.jpg"
-  bio              : "Postdoctoral Researcher"
+  bio              : "Postdoctoral Researcher<br>Fair, robust, explainable ML"
   location         : "Copenhagen, Denmark"
   employer         : "DTU Compute"
   pubmed           : 
