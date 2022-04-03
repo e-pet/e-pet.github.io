@@ -66,7 +66,7 @@ redirect_from:
 
 ## Patent applications
 - Eger, Rostalski, Petersen, Graßhoff: **Process and signal processing unit for determining a pneumatic parameter with the use of a lung-mechanical model and of a gradient model.** DE102020133460A1 / US20210205561A1, 2020.
-- Eger, Petersen, Graßhoff, Rostalski: **Method and signal processing unitfordetermining the respiratory activityofa patient.** DE112020000233A5 / WO2021052791A1, 2019.
+- Eger, Petersen, Graßhoff, Rostalski: **Method and signal processing unit for determining the respiratory activity of a patient.** DE112020000233A5 / WO2021052791A1, 2019.
 - Eger, Kahl, Rostalski, Petersen: **Apparatus, method, and computer program for influencing the respiration of a person.** DE112020000114A5 / WO2020188069A1, 2019.
 - Eger, Rostalski, Petersen, Graßhoff: **Method and signal processing unit for determining the respiratory activity of a patient.** DE102019007717B3 / WO2021089215A1, 2019.
 - Kahl, Petersen, Graßhoff, Rostalski: **Method and device for determining a respiratory or cardiogenic signal.** DE112020000232A5 / WO2021063601A1, 2019.
