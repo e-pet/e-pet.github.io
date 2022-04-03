@@ -19,7 +19,7 @@ The discussion is fully general and applies to both regression and classificatio
 Let's go.
 
 ### What is maximum likelihood estimation?
-The idea is simple: given a model $q(y \vert x; \theta)$ of the conditional distribution of a target variable $y$ given input data $x$, find the set of parameters $\theta_{ML}$ that maximizes the likelihood of observing the data as they were observed:
+The idea is simple: given a model $q(y \vert x; \theta)$ of the conditional distribution of a target variable $y$ given input data $x$, find the set of parameters $\theta_{\text{ML}}$ that maximizes the likelihood of observing the data as they were observed:
 
 $$
 \theta_{\text{ML}} = \arg\max_{\theta} q(Y \vert X; \theta),
@@ -46,11 +46,11 @@ Maximum likelihood estimation can be cast within the extremely broad framework o
 $$
 \begin{align}
 \theta_{\text{ML}} &= \arg\min_{\theta} - \sum_{i=1}^N \ln q(y_i \vert x_i; \theta)\\
-&= \arg\min_{\theta} E_{p_{emp}}\left[-\ln q(y|x,\mathbf{\theta})\right],
+&= \arg\min_{\theta} E_{p_{\text{emp}}}\left[-\ln q(y|x,\mathbf{\theta})\right],
 \end{align}
 $$
 
-where $E_p$ is the [expected value](https://en.wikipedia.org/wiki/Expected_value "Expected value") operator with respect to the distribution $p$, and $p_{emp}$ denotes the empirical measure defined by the observed dataset $(X, Y)$.  Thus, likelihood maximization is identical to empirical risk minimization if the *risk* defined as 
+where $E_p$ is the [expected value](https://en.wikipedia.org/wiki/Expected_value "Expected value") operator with respect to the distribution $p$, and $p_{\text{emp}}$ denotes the empirical measure defined by the observed dataset $(X, Y)$.  Thus, likelihood maximization is identical to empirical risk minimization if the *risk* defined as 
 
 $$
 \mathcal{R}(x, y, \theta) = -\ln q(y \vert x,\mathbf{\theta}).
@@ -59,7 +59,7 @@ $$
 ### Maximum likelihood estimation as cross-entropy minimization
 The [cross-entropy](https://en.wikipedia.org/wiki/Cross_entropy) of a first distribution $q$ relative to a second distribution $p$ is defined as 
 $$ H(p, q) = -E_p[\ln q].$$
-Returning to our identification problem,  if we choose $p=p_{emp}(y \vert x)$ and $q=q(y \vert x; \theta)$, we observe that maximizing the likelihood $q(Y \vert X; \theta)$ is identical to minimizing the cross-entropy of the distribution $q(y \vert x; \theta)$ relative to the empirical distribution $p_{emp}(y \vert x)$. 
+Returning to our identification problem, if we choose $p=p_{\text{emp}}(y \vert x)$ and $q=q(y \vert x; \theta)$, we observe that maximizing the likelihood $q(Y \vert X; \theta)$ is identical to minimizing the cross-entropy of the distribution $q(y \vert x; \theta)$ relative to the empirical distribution $p_{\text{emp}}(y \vert x)$. 
 
 ### Maximum likelihood estimation as Kullback-Leibler divergence minimization
 The definition of the cross-entropy above can be reformulated in terms of the [Kullback–Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence "Kullback–Leibler divergence") (a measure of differences between distributions, also known as the _relative entropy_), since
