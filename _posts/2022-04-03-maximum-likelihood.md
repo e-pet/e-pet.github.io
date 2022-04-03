@@ -67,21 +67,21 @@ H(p,q)&= -E_p\left[\ln q(x)\right] \\
 \end{align}$$
 where $H(p)$ denotes the [*entropy*](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of the distribution $p$ and $D_{KL}(p||q)$ the Kullback-Leibler divergence.
 
-Again choosing $p=p_{emp}(y|x)$ and $q=q(y|x; \theta)$, and noting that $H(p)$ is independent of our choice of model parameters $\theta$, we observe that maximizing the likelihood of the data is also identical to minimizing the Kullback-Leibler divergence between the empirical distribution $p_{emp}(y|x)$ and the model $q(y|x; \theta)$. (We would, of course, prefer to minimize the divergence with respect to the true, data-generating process $p(y|x)$ instead of the empirical distribution. However, this is obviously infeasible since $p(y|x)$ is unknown.)
+Again choosing $p=p_{\text{emp}}(y | x)$ and $q=q(y | x; \theta)$, and noting that $H(p)$ is independent of our choice of model parameters $\theta$, we observe that maximizing the likelihood of the data is also identical to minimizing the Kullback-Leibler divergence between the empirical distribution $p_{emp}(y | x)$ and the model $q(y | x; \theta)$. (We would, of course, prefer to minimize the divergence with respect to the true, data-generating process $p(y | x)$ instead of the empirical distribution. However, this is obviously infeasible since $p(y | x)$ is unknown.)
 
 ### Maximum likelihood and least squares
 Known since the eighteenth century, *least-squares estimation* is possibly the single most famous parameter estimation paradigm. It turns out that under mild assumptions, least-squares estimation coincides with maximum likelihood estimation. For an arbitrary, possibly nonlinear regression model $f(x; \theta)$, we have
 $$
-\theta_{LS} = \arg\min_\theta \sum_{i=1}^N||y_i - f(x_i; \theta)||^2.
+\theta_{LS} = \arg\min_\theta \sum_{i=1}^N || y_i - f(x_i; \theta) || ^2.
 $$
 If we now assume a Gaussian noise model 
 $$
-q(y_i|x_i, \theta, \sigma_{\varepsilon}) = \mathcal{N}(f(x_i; \theta), \sigma_{\varepsilon}^2),
+q(y_i | x_i, \theta, \sigma_{\varepsilon}) = \mathcal{N}(f(x_i; \theta), \sigma_{\varepsilon}^2),
 $$
 we obtain for the maximum likelihood estimator that
 $$
 \begin{align}
-\theta_{ML}, \sigma_{\varepsilon, ML} &= \arg \min_{\theta, \sigma_{\varepsilon}} - \sum_{i=1}^N \ln q(y_i|x_i, \theta, \sigma_{\varepsilon}) \\
+\theta_{ML}, \sigma_{\varepsilon, ML} &= \arg \min_{\theta, \sigma_{\varepsilon}} - \sum_{i=1}^N \ln q(y_i | x_i, \theta, \sigma_{\varepsilon}) \\
 &= \arg \min_{\theta, \sigma_{\varepsilon}} - \sum_{i=1}^N \ln \frac{1}{\sqrt{2\pi \sigma_{\varepsilon}^2}} \mathrm{e}^{-\frac{1}{2 \sigma_{\varepsilon}^2} (y_i - f(x_i; \theta))^2} \\
 &= \arg \min_{\theta, \sigma_{\varepsilon}} \sum_{i=1}^N (y_i - f(x_i; \theta))^2 + \frac{N}{2} \ln 2 \pi \sigma_{\varepsilon}^2.
 \end{align}
@@ -99,7 +99,7 @@ Moreover, maximum likelihood estimation is *asymptotically efficient*, meaning t
 
 Finally, ML estimators also tend to be *well-calibrated*, meaning that 
 $$
-p(y|x, R=r) = r \quad \forall\, r,
+p(y | x, R=r) = r \quad \forall\, r,
 $$
 where $R$ denotes the (risk score) output of the trained model. This is readily apparent from the fact that an ML-optimal model minimizes the KL divergence from the data-generating distribution, as discussed above: the optimum is only obtained if $p(y|x) = q(y|x; \theta^*)$. (For a more detailed discussion about how maximum likelihood estimation implies calibration, refer to [Liu et al. 2019](https://arxiv.org/pdf/1808.10013.pdf). For the same reason, [the negative log likelihood has also been proposed as a *calibration measure*](https://arxiv.org/pdf/2002.06470.pdf). Notice, however, that it is not a pure measure of calibration; instead, it measures a mixture of calibration and *separation*.)
 
@@ -110,7 +110,7 @@ On the positive side, however, the negative log likelihood represents a [_proper
 
 Finally, an interesting remark on the potential for overfitting when doing maximum likelihood estimation, due to Bishop (2006), p. 206:
 
-> It is worth noting that maximum likelihood can exhibit severe over-fitting for data sets that are linearly separable. This arises because the maximum likelihood solution occurs when the hyperplane corresponding to $\sigma = 0.5$, equivalent to $w^T\phi=0$, separates the two classes and the magnitude of $w$ goes to infinity. In this case, the logistic sigmoid function becomes infinitely steep in feature space, corresponding to a Heaviside step function, so that every training point from each class k is assigned a posterior probability $p(C_k|x) = 1$. Furthermore, there is typically a continuum of such solutions because any separating hyperplane will give rise to the same posterior probabilities at the training data points. [...] Maximum likelihood provides no way to favour one such solution over another, and which solution is found in practice will depend on the choice of optimization algorithm and on the parameter initialization. Note that the problem will arise even if the number of data points is large compared with the number of parameters in the model, so long as the training data set is linearly separable. The singularity can be avoided by inclusion of a prior and finding a MAP solution for $w$, or equivalently by adding a regularization term to the error function.
+> It is worth noting that maximum likelihood can exhibit severe over-fitting for data sets that are linearly separable. This arises because the maximum likelihood solution occurs when the hyperplane corresponding to $\sigma = 0.5$, equivalent to $w^T\phi=0$, separates the two classes and the magnitude of $w$ goes to infinity. In this case, the logistic sigmoid function becomes infinitely steep in feature space, corresponding to a Heaviside step function, so that every training point from each class k is assigned a posterior probability $p(C_k | x) = 1$. Furthermore, there is typically a continuum of such solutions because any separating hyperplane will give rise to the same posterior probabilities at the training data points. [...] Maximum likelihood provides no way to favour one such solution over another, and which solution is found in practice will depend on the choice of optimization algorithm and on the parameter initialization. Note that the problem will arise even if the number of data points is large compared with the number of parameters in the model, so long as the training data set is linearly separable. The singularity can be avoided by inclusion of a prior and finding a MAP solution for $w$, or equivalently by adding a regularization term to the error function.
 
 How does this not contradict all the nice properties of maximum likelihood estimation discussed above, such as consistency, efficiency, and calibration? Well, in the case discussed by Bishop, there simply is no unique optimum - instead, there is a manifold of possible solutions. As Bishop remarks, to obtain a specific solution, some prior information must be included about which of the infinitely many solutions of the estimation problem to prefer. Notice that the maximum likelihood solution discussed by Bishop is, in fact, calibrated: it *correctly* assigns high confidence to its predictions.
 
@@ -119,8 +119,8 @@ For _discrete_ probability distributions $p$ and $q$ with the same support $\mat
 $$
 \begin{align}
 H(p,q) &= -E_p[\ln q] \\
-&= -\sum_{y\in\mathcal{Y}} p(y|x) \ln q(y|x)\\
-&= -\sum_{i=1}^N y_i \ln q(y_i|x_i) + (1-y_i) \ln (1-q(y_i|x)).
+&= -\sum_{y\in\mathcal{Y}} p(y | x) \ln q(y | x)\\
+&= -\sum_{i=1}^N y_i \ln q(y_i | x_i) + (1-y_i) \ln (1-q(y_i | x)).
 \end{align}
 $$
 
