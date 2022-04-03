@@ -133,7 +133,7 @@ Finally, an interesting remark on the potential for overfitting when doing maxim
 How does this not contradict all the nice properties of maximum likelihood estimation discussed above, such as consistency, efficiency, and calibration? Well, in the case discussed by Bishop, there simply is no unique optimum – instead, there is a manifold of possible solutions. As Bishop remarks, to obtain a specific solution, some prior information must be included about which of the infinitely many solutions of the estimation problem to prefer. Notice that the maximum likelihood solution discussed by Bishop is, in fact, calibrated: it *correctly* assigns high confidence to its predictions.
 
 ### The special case of binary classification
-For _discrete_ probability distributions $p$ and $q$ with the same support $\mathcal{Y}=\{0, 1\}$, the (binary) cross-entropy simplifies (again assuming $p=p_{\text{emp}}$) to the often-used formulation
+For _discrete_ probability distributions $p$ and $q$ with the same support $\mathcal{Y}={0, 1}$, the (binary) cross-entropy simplifies (again assuming $p=p_{\text{emp}}$) to the often-used formulation
 
 $$
 \begin{align}
