@@ -20,12 +20,15 @@ Let's go.
 
 ### What is maximum likelihood estimation?
 The idea is simple: given a model $q(y \vert x; \theta)$ of the conditional distribution of a target variable $y$ given input data $x$, find the set of parameters $\theta_{ML}$ that maximizes the likelihood of observing the data as they were observed:
+
 $$
 \theta_{ML} = \arg\max_{\theta} q(Y \vert X; \theta),
 $$
+
 where $Y$ and $X$ denote vectors (or matrices) representing a given dataset.
 
 If the individual observations $(y_i, x_i)$ are assumed independent of one another, this can be rewritten as 
+
 $$
 \begin{align}
 \theta_{ML} &= \arg\max_{\theta} \prod_{i=1}^N q(y_i \vert x_i; \theta), \\
@@ -39,13 +42,16 @@ Thus, we arrive at the usual formulation of ML estimation as minimizing the *neg
 
 ### Maximum likelihood estimation as empirical risk minimization
 Maximum likelihood estimation can be cast within the extremely broad framework of *empirical risk minimization* (ERM):
+
 $$
 \begin{align}
 \theta_{ML} &= \arg\min_{\theta} - \sum_{i=1}^N \ln q(y_i \vert x_i; \theta)\\
 &= \arg\min_{\theta} E_{p_{emp}}\left[-\ln q(y|x,\mathbf{\theta})\right],
 \end{align}
 $$
+
 where $E_p$ is the [expected value](https://en.wikipedia.org/wiki/Expected_value "Expected value") operator with respect to the distribution $p$, and $p_{emp}$ denotes the empirical measure defined by the observed dataset $(X, Y)$.  Thus, likelihood maximization is identical to empirical risk minimization if the *risk* defined as 
+
 $$
 \mathcal{R}(x, y, \theta) = -\ln q(y \vert x,\mathbf{\theta}).
 $$
@@ -57,6 +63,7 @@ Returning to our identification problem,  if we choose $p=p_{emp}(y \vert x)$ an
 
 ### Maximum likelihood estimation as Kullback-Leibler divergence minimization
 The definition of the cross-entropy above can be reformulated in terms of the [Kullback–Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence "Kullback–Leibler divergence") (a measure of differences between distributions, also known as the _relative entropy_), since
+
 $$ \begin{align}
 H(p,q)&= -E_p\left[\ln q(x)\right] \\
 &= -E_p\left[ \ln \frac{p(x) q(x)}{p(x)}\right] \\
@@ -65,20 +72,26 @@ H(p,q)&= -E_p\left[\ln q(x)\right] \\
 &= -E_p\left[\ln p(x)\right] + E_p\left[\frac{p(x)}{q(x)}\right] \\
 &= H(p) + D_{KL}(p||q),
 \end{align}$$
+
 where $H(p)$ denotes the [*entropy*](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of the distribution $p$ and $D_{KL}(p||q)$ the Kullback-Leibler divergence.
 
 Again choosing $p=p_{\text{emp}}(y \vert x)$ and $q=q(y \vert x; \theta)$, and noting that $H(p)$ is independent of our choice of model parameters $\theta$, we observe that maximizing the likelihood of the data is also identical to minimizing the Kullback-Leibler divergence between the empirical distribution $p_{\text{emp}}(y \vert x)$ and the model $q(y \vert x; \theta)$. (We would, of course, prefer to minimize the divergence with respect to the true, data-generating process $p(y \vert x)$ instead of the empirical distribution. However, this is obviously infeasible since $p(y \vert x)$ is unknown.)
 
 ### Maximum likelihood and least squares
 Known since the eighteenth century, *least-squares estimation* is possibly the single most famous parameter estimation paradigm. It turns out that under mild assumptions, least-squares estimation coincides with maximum likelihood estimation. For an arbitrary, possibly nonlinear regression model $f(x; \theta)$, we have
+
 $$
 \theta_{LS} = \arg\min_\theta \sum_{i=1}^N || y_i - f(x_i; \theta) || ^2.
 $$
+
 If we now assume a Gaussian noise model 
+
 $$
 q(y_i \vert x_i, \theta, \sigma_{\varepsilon}) = \mathcal{N}(f(x_i; \theta), \sigma_{\varepsilon}^2),
 $$
+
 we obtain for the maximum likelihood estimator that
+
 $$
 \begin{align}
 \theta_{ML}, \sigma_{\varepsilon, ML} &= \arg \min_{\theta, \sigma_{\varepsilon}} - \sum_{i=1}^N \ln q(y_i \vert x_i, \theta, \sigma_{\varepsilon}) \\
@@ -86,10 +99,13 @@ $$
 &= \arg \min_{\theta, \sigma_{\varepsilon}} \sum_{i=1}^N (y_i - f(x_i; \theta))^2 + \frac{N}{2} \ln 2 \pi \sigma_{\varepsilon}^2.
 \end{align}
 $$
+
 Since the optimization with respect to the regression parameters $\theta$ can be carried out independently of the value of $\sigma_{\varepsilon}$, it follows that
+
 $$
 \theta_{ML} = \theta_{LS}
 $$
+
 for arbitrary functions $f(x; \theta)$. (Again, this relies on the assumption of a Gaussian noise model.)
 
 ### Consistency, efficiency, calibration
@@ -98,9 +114,11 @@ Maximum likelihood estimation is *asymptotically consistent*: if there is a uniq
 Moreover, maximum likelihood estimation is *asymptotically efficient*, meaning that for large sample numbers, no consistent estimator achieves a lower mean squared parameter error than the maximum likelihood estimator. (In other words, it [reaches](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation#Efficiency) the [Cramér-Rao lower bound](https://en.wikipedia.org/wiki/Cram%C3%A9r%E2%80%93Rao_bound).)
 
 Finally, ML estimators also tend to be *well-calibrated*, meaning that 
+
 $$
 p(y \vert x, R=r) = r \quad \forall\, r,
 $$
+
 where $R$ denotes the (risk score) output of the trained model. This is readily apparent from the fact that an ML-optimal model minimizes the KL divergence from the data-generating distribution, as discussed above: the optimum is only obtained if $p(y \vert x) = q(y \vert x; \theta^{\ast})$. (For a more detailed discussion about how maximum likelihood estimation implies calibration, refer to [Liu et al. 2019](https://arxiv.org/pdf/1808.10013.pdf). For the same reason, [the negative log likelihood has also been proposed as a *calibration measure*](https://arxiv.org/pdf/2002.06470.pdf). Notice, however, that it is not a pure measure of calibration; instead, it measures a mixture of calibration and *separation*.)
 
 ### Properties of the optimization problem
@@ -116,6 +134,7 @@ How does this not contradict all the nice properties of maximum likelihood estim
 
 ### The special case of binary classification
 For _discrete_ probability distributions $p$ and $q$ with the same support $\mathcal{Y}=\{0, 1\}$, the (binary) cross-entropy simplifies (again assuming $p=p_{\text{emp}}$) to the often-used formulation
+
 $$
 \begin{align}
 H(p,q) &= -E_p[\ln q] \\
@@ -125,22 +144,14 @@ H(p,q) &= -E_p[\ln q] \\
 $$
 
 ### References
-Bottou (1991), Stochastic Gradient Learning in Neural Networks. [Link](https://leon.bottou.org/publications/pdf/nimes-1991.pdf)
-
-Ljung (1999), System Identification: Theory for the User. Prentice Hall, second edition edition.
-
-Bishop (2006), Pattern Recognition and Machine Learning. Springer.
-
-Nowozin (2015), How good are your beliefs? Part 1: Scoring Rules. [Link](http://www.nowozin.net/sebastian/blog/how-good-are-your-beliefs-part-1-scoring-rules.html)
-
-Goodfellow, Bengio, Courville (2016), Deep Learning. [Link](https://www.deeplearningbook.org/)
-
-Guo, Pleiss, Sun, Weinberger (2017), On Calibration of Modern Neural Networks. [Link](https://arxiv.org/pdf/1706.04599.pdf)
-
-Liu et al. (2018), The implicit fairness criterion of unconstrained learning. [Link](https://arxiv.org/pdf/1808.10013.pdf)
-
-Harrell (2020), Damage Caused by Classification Accuracy and Other Discontinuous Improper Accuracy Scoring Rules. [Link](https://www.fharrell.com/post/class-damage/)
-
-Ashukha et al. (2021), Pitfalls of in-domain uncertainty estimation and ensembling in deep learning. [Link](https://arxiv.org/pdf/2002.06470.pdf)
+- Bottou (1991), Stochastic Gradient Learning in Neural Networks. [Link](https://leon.bottou.org/publications/pdf/nimes-1991.pdf)
+- Ljung (1999), System Identification: Theory for the User. Prentice Hall, second edition edition.
+- Bishop (2006), Pattern Recognition and Machine Learning. Springer.
+- Nowozin (2015), How good are your beliefs? Part 1: Scoring Rules. [Link](http://www.nowozin.net/sebastian/blog/how-good-are-your-beliefs-part-1-scoring-rules.html)
+- Goodfellow, Bengio, Courville (2016), Deep Learning. [Link](https://www.deeplearningbook.org/)
+- Guo, Pleiss, Sun, Weinberger (2017), On Calibration of Modern Neural Networks. [Link](https://arxiv.org/pdf/1706.04599.pdf)
+- Liu et al. (2018), The implicit fairness criterion of unconstrained learning. [Link](https://arxiv.org/pdf/1808.10013.pdf)
+- Harrell (2020), Damage Caused by Classification Accuracy and Other Discontinuous Improper Accuracy Scoring Rules. [Link](https://www.fharrell.com/post/class-damage/)
+- Ashukha et al. (2021), Pitfalls of in-domain uncertainty estimation and ensembling in deep learning. [Link](https://arxiv.org/pdf/2002.06470.pdf)
 
 ------
