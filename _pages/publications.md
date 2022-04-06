@@ -23,6 +23,7 @@ redirect_from:
 
 
 ## Preprints (not peer-reviewed)
+- Petersen, Feragen, da Costa Zemsch, Henriksen, Wiese Christensen, Ganz: **Feature robustness and sex differences in medical imaging: a case study in MRI-based Alzheimer's disease detection** [[arxiv link]](https://arxiv.org/abs/2204.01737)
 - Petersen, Potdevin, Mohammadi, Zidowitz, Breyer, Nowotka, Henn, Pechmann, Leucker, Rostalski, Herzog: **Responsible and Regulatory Conform Machine Learning for Medicine: A Survey of Technical Challenges and Solutions.** [[arxiv link]](https://arxiv.org/abs/2107.09546)
 
 
