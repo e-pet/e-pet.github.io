@@ -119,7 +119,10 @@ $$
 p(y \vert x, R=r) = r \quad \forall\, r,
 $$
 
-where $R$ denotes the (risk score) output of the trained model. This is readily apparent from the fact that an ML-optimal model minimizes the KL divergence from the data-generating distribution, as discussed above: the optimum is only obtained if $p(y \vert x) = q(y \vert x; \theta^{\ast})$. (For a more detailed discussion about how maximum likelihood estimation implies calibration, refer to [Liu et al. 2019](https://arxiv.org/pdf/1808.10013.pdf). For the same reason, [the negative log likelihood has also been proposed as a *calibration measure*](https://arxiv.org/pdf/2002.06470.pdf). Notice, however, that it is not a pure measure of calibration; instead, it measures a mixture of calibration and *separation*.)
+where $R$ denotes the (risk score) output of the trained model. This is readily apparent from the fact that an ML-optimal model minimizes the KL divergence from the data-generating distribution, as discussed above: the optimum is only obtained if $p(y \vert x) = q(y \vert x; \theta^{\ast})$.
+For a more detailed discussion about how maximum likelihood estimation implies calibration, refer to [Liu et al. 2019](https://arxiv.org/pdf/1808.10013.pdf). For the same reason, [the negative log likelihood has also been proposed as a *calibration measure*](https://arxiv.org/pdf/2002.06470.pdf).
+Notice, however, that it is not a pure measure of calibration; instead, [it measures a mixture of calibration and *separation*](https://research-information.bris.ac.uk/ws/portalfiles/portal/76351926/2015_ecml_decomposition_cameraready.pdf).
+Importantly, calibration of (maximum likelihood/cross-entropy-optimal) neural networks is usually only achieved for in-domain data, whereas [out-of-distribution prediction typically suffers from extreme overconfidence](https://arxiv.org/abs/1812.05720). [Various](https://arxiv.org/pdf/2002.10118.pdf) [fixes](https://proceedings.neurips.cc/paper/2021/hash/9be40cee5b0eee1462c82c6964087ff9-Abstract.html) [have](https://arxiv.org/abs/1612.01474) [been](https://arxiv.org/abs/1706.02690) [proposed](https://openreview.net/pdf?id=ByxGkySKwH). (This phenomenon depends on the employed model: Gaussian process models, for example, typically do not suffer from asymptotic overconfidence.)
 
 ### Properties of the optimization problem
 The likelihood landscape (as a function of the parameters $\theta$ to be optimized) is, in general, non-convex. (It also depends on the way the model is parameterized.) Thus, global optimization strategies are required if local minima are to be escaped. (One of the various benefits of *stochastic* gradient descent is that it is [capable of escaping local minima](https://leon.bottou.org/publications/pdf/nimes-1991.pdf) to some degree. It is, however, of course not a true global optimization strategy.) 
@@ -148,9 +151,11 @@ $$
 - Ljung (1999), System Identification: Theory for the User. Prentice Hall, second edition edition.
 - Bishop (2006), Pattern Recognition and Machine Learning. Springer.
 - Nowozin (2015), How good are your beliefs? Part 1: Scoring Rules. [Link](http://www.nowozin.net/sebastian/blog/how-good-are-your-beliefs-part-1-scoring-rules.html)
+- Kull and Flach (2015), Novel Decompositions of Proper Scoring Rules for Classification: Score Adjustment as Precursor to Calibration. [Link](https://research-information.bris.ac.uk/ws/portalfiles/portal/76351926/2015_ecml_decomposition_cameraready.pdf)
 - Goodfellow, Bengio, Courville (2016), Deep Learning. [Link](https://www.deeplearningbook.org/)
 - Guo, Pleiss, Sun, Weinberger (2017), On Calibration of Modern Neural Networks. [Link](https://arxiv.org/pdf/1706.04599.pdf)
 - Liu et al. (2018), The implicit fairness criterion of unconstrained learning. [Link](https://arxiv.org/pdf/1808.10013.pdf)
+- Hein, Andriushchenko, Bitterwolf (2019), Why ReLU networks yield high-confidence predictions far away from the training data and how to mitigate the problem. [Link](https://arxiv.org/abs/1812.05720)
 - Harrell (2020), Damage Caused by Classification Accuracy and Other Discontinuous Improper Accuracy Scoring Rules. [Link](https://www.fharrell.com/post/class-damage/)
 - Ashukha et al. (2021), Pitfalls of in-domain uncertainty estimation and ensembling in deep learning. [Link](https://arxiv.org/pdf/2002.06470.pdf)
 
