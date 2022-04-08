@@ -12,7 +12,7 @@ tags:
 
 - A derivation of maximum likelihood estimation
 - A derivation of its equivalence to cross-entropy minimization, empirical risk minimization, and least squares estimation
-- A summary of some important properties of ML estimation, including why it tends to produce well-calibrated estimators as well as its robustness to model misspecification
+- A summary of some important properties of ML estimation, including under which circumstances it tends to produce well-calibrated estimators, as well as its robustness to model misspecification
 
 The discussion is fully general and applies to both regression and classification settings, i.e., continuous or discrete variables.
 
