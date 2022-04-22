@@ -8,7 +8,7 @@ redirect_from:
 
 {% include base_path %}
 
-### Work experience
+### Positions
 * *2021-today:* **Post-doctoral researcher**, DTU Compute, Technical University of Denmark.
 * *2015-2021:* **Research Associate / Ph.D. student**, Institute for Electrical Engineering in Medicine, University of Lübeck, Germany.
 * *2009-2015:* **Student trainee**, Dräger Medical, Lübeck, Germany.
@@ -24,4 +24,4 @@ redirect_from:
 * *2009:* **German Abitur**, Pinneberg, Germany.
 
 ### Awards
-* 2020 [prize for patient safety in medical engineering](https://www.ime.uni-luebeck.de/service/aktuelles/news/article/eike-petersen-receives-award-for-patient-safety-in-medical-engineering.html) by the German association for biomedical technology (DGBMT) and the Aktionsbündnis Patientensicherheit (APS), 2nd place. (For our work on surface EMG-based monitoring of respiratory effort, specifically these two papers: [[1]](https://ieeexplore.ieee.org/document/8988257), [[2]](https://www.sciencedirect.com/science/article/pii/S2405896320309654).)
+* 2020 [award for patient safety in medical engineering](https://www.ime.uni-luebeck.de/service/aktuelles/news/article/eike-petersen-receives-award-for-patient-safety-in-medical-engineering.html) by the German association for biomedical technology (DGBMT) and the Aktionsbündnis Patientensicherheit (APS), 2nd place. (For our work on surface EMG-based monitoring of respiratory effort, specifically these two papers: [[1]](https://ieeexplore.ieee.org/document/8988257), [[2]](https://www.sciencedirect.com/science/article/pii/S2405896320309654).)
