@@ -8,12 +8,13 @@ tags:
   - Responsibility
   - Capitalism
 ---
+
 I recently had the opportunity to write a book review essay for [Prometheus – Critical Studies in Innovation](http://www.prometheusjournal.co.uk/).
 The book I reviewed is "Is AI good for the planet?" by Benedetta Brevini (2021), you can find it [here](https://www.wiley.com/en-dk/Is+AI+Good+for+the+Planet%3F-p-9781509547944).
 Below you can find the full text of my review essay, which will be officially published in the journal later this year.
 Before we dive in, I'd like to thank [Steven Umbrello](https://stevenumbrello.com/), the Prometheus book review editor, for entrusting me this review!
 
----
+-----
 
 Artificial Intelligence (AI) has been hailed as an essential solution to practically all critical challenges faced by humanity, including climate change and other natural disasters.
 In parallel with its proliferation over the course of the last decade, critical voices have grown stronger as well, however.
