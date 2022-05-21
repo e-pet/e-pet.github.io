@@ -1,5 +1,5 @@
 ---
-title: Book review: Is AI good for the planet?
+title: Book review Is AI good for the planet
 permalink: /posts/2022/2022-04-04-maximum-likelihood/
 date: 2022-04-04
 tags:
