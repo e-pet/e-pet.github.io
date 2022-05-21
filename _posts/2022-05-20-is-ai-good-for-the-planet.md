@@ -1,12 +1,11 @@
 ---
-title: Book review: Is AI good for the planet
-permalink: /posts/2022/2022-05-20-is-ai-good-for-the-planet/
-date: 2022-05-20
+title: Book review: Is AI good for the planet?
+permalink: /posts/2022/2022-04-04-maximum-likelihood/
+date: 2022-04-04
 tags:
   - Machine Learning
-  - Responsibility
-  - Climate Change
-  - Capitalism
+  - Math
+  - Calibration
 ---
 
 ... *really*, yet another post about about maximum likelihood (ML) estimation? Well – yes; I could not find a source that summarized exactly the things I needed to know, so here it is. What will you find?
