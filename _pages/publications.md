@@ -9,14 +9,15 @@ redirect_from:
 
 ## Journal publications
 #### 2021
-- Graßhoff, Petersen, Farquharson, Kustermann, Kabitz, Rostalski, Walterspacher: **Surface EMG-based quantification of inspiratory effort: a quantitative comparison with Pes.** *Critical Care, vol. 25, no. 441, 2021.* [[Link]](https://ccforum.biomedcentral.com/articles/10.1186/s13054-021-03833-w)
+Graßhoff, Petersen, Farquharson, Kustermann, Kabitz, Rostalski, Walterspacher: *Surface EMG-based quantification of inspiratory effort: a quantitative comparison with Pes.* Critical Care, vol. 25, no. 441, 2021. [[Link]](https://ccforum.biomedcentral.com/articles/10.1186/s13054-021-03833-w)
 
 #### 2020
-- Petersen, Sauer, Graßhoff, Rostalski: **Removing Cardiac Artifacts From Single-Channel Respiratory Electromyograms.** *IEEE Access, no. 8, pp. 30905-30917, 2020.* [[Link]](https://ieeexplore.ieee.org/document/8988257/) [[Associated toolbox]](https://github.com/e-pet/ecg-removal) [[Reproducible code capsule]](https://codeocean.com/capsule/2933724/tree/v1)
+Petersen, Sauer, Graßhoff, Rostalski: *Removing Cardiac Artifacts From Single-Channel Respiratory Electromyograms.* IEEE Access, no. 8, pp. 30905-30917, 2020. [[Link]](https://ieeexplore.ieee.org/document/8988257/) [[Associated toolbox]](https://github.com/e-pet/ecg-removal) [[Reproducible code capsule]](https://codeocean.com/capsule/2933724/tree/v1)
 
 #### 2019
-- Herzog, Petersen, Rostalski: **Iterative Approximate Nonlinear Inference via Gaussian Message Passing on Factor Graphs.** *IEEE Control Systems Letters, no. 3, 2019.* [[Link]](https://ieeexplore.ieee.org/document/8723648) [[Associated toolbox]](https://github.com/e-pet/kfs_suite)
-- Petersen, Rostalski. **A Comprehensive Mathematical Model of Motor Unit Pool Organization, Surface Electromyography and Force Generation.** *frontiers in Physiology, 2019.* [[Link]](https://www.frontiersin.org/articles/10.3389/fphys.2019.00176/full) [[Associated toolbox]](https://github.com/ime-luebeck/semgsim)
+Herzog, Petersen, Rostalski: *Iterative Approximate Nonlinear Inference via Gaussian Message Passing on Factor Graphs.* IEEE Control Systems Letters, no. 3, 2019. [[Link]](https://ieeexplore.ieee.org/document/8723648) [[Associated toolbox]](https://github.com/e-pet/kfs_suite)
+
+Petersen, Rostalski. *A Comprehensive Mathematical Model of Motor Unit Pool Organization, Surface Electromyography and Force Generation.* frontiers in Physiology, 2019. [[Link]](https://www.frontiersin.org/articles/10.3389/fphys.2019.00176/full) [[Associated toolbox]](https://github.com/ime-luebeck/semgsim)
 
 #### 2017
 - Petersen, Buchner, Eger, Rostalski: **Convolutive blind source separation of surface EMG measurements of the respiratory muscles.** *Biomedical Engineering/Biomedizinische Technik, no. 62, pp. 171-181, 2017.* [[Link]](https://www.degruyter.com/document/doi/10.1515/bmt-2016-0092/html)
