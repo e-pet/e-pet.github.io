@@ -2,6 +2,7 @@
 title: 'Don't use standard cubic spline interpolation'
 date: 2199-01-01
 permalink: /posts/2018/2018-04-04-interpolation/
+read_time: False
 tags:
   - approximation
   - numerical computing
