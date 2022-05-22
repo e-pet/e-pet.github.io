@@ -2,6 +2,7 @@
 title: Beautiful boxplots in pgfplots
 permalink: /posts/2018/2018-03-21-pgfplots-boxplot/
 date: 2018-03-21
+read_time: False
 tags:
   - Visualization
   - Publishing
