@@ -118,26 +118,26 @@ Given its brevity and its non-technical, opinionated and engaging writing style,
 
 ### References
 - Bughin, J. et al. (2018) Notes from the AI frontier: Modeling the impact of AI on the world economy, McKinsey Global Institute report. <https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning>.
-- Chui, M. et al. (2021) The state of AI in 2021, McKinsey Global Institute report. https://www.mckinsey.com/business-functions/quantumblack/our-insights/global-survey-the-state-of-ai-in-2021.
+- Chui, M. et al. (2021) The state of AI in 2021, McKinsey Global Institute report. <https://www.mckinsey.com/business-functions/quantumblack/our-insights/global-survey-the-state-of-ai-in-2021>.
 - Crawford, K. (2021) Atlas of AI, Yale University Press. ISBN 978-0300209570.
-- Gupta, U. et al. (2021) Chasing Carbon: The Elusive Environmental Footprint of Computing, IEEE International Symposium on High-Performance Computer Architecture (HPCA). https://doi.org/10.1109/HPCA51647.2021.00076.
-- Henderson, P. et al. (2020) Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning, Journal of Machine Learning Research, Vol. 21. http://jmlr.org/papers/v21/20-312.html.
-- Hickel, J. and Kallis, G. (2020) Is Green Growth Possible?, New Political Economy, Vol. 25(4). https://doi.org/10.1080/13563467.2019.1598964.
-- IPCC Working Group III (2022) Climate Change 2022: Mitigation of Climate Change, Intergovernmental Panel on Climate Change, Sixth Assessment Report (AR6). https://www.ipcc.ch/report/sixth-assessment-report-working-group-3/.
-- IEA (2021) Data Centres and Data Transmission Networks, International Energy Agency, Paris. https://www.iea.org/reports/data-centres-and-data-transmission-networks.
-- Kallis, G. et al. (2012) The Economics of Degrowth, Ecological Economics, Vol. 84. https://doi.org/10.1016/j.ecolecon.2012.08.017.
-- Massé, E. (2021) Three Years under the EU GDPR: An Implementation Progress Report, Access Now report. https://www.accessnow.org/gdpr-three-years/.
+- Gupta, U. et al. (2021) Chasing Carbon: The Elusive Environmental Footprint of Computing, IEEE International Symposium on High-Performance Computer Architecture (HPCA). <https://doi.org/10.1109/HPCA51647.2021.00076>.
+- Henderson, P. et al. (2020) Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning, Journal of Machine Learning Research, Vol. 21. <http://jmlr.org/papers/v21/20-312.html>.
+- Hickel, J. and Kallis, G. (2020) Is Green Growth Possible?, New Political Economy, Vol. 25(4). <https://doi.org/10.1080/13563467.2019.1598964>.
+- IPCC Working Group III (2022) Climate Change 2022: Mitigation of Climate Change, Intergovernmental Panel on Climate Change, Sixth Assessment Report (AR6). <https://www.ipcc.ch/report/sixth-assessment-report-working-group-3/>.
+- IEA (2021) Data Centres and Data Transmission Networks, International Energy Agency, Paris. <https://www.iea.org/reports/data-centres-and-data-transmission-networks>.
+- Kallis, G. et al. (2012) The Economics of Degrowth, Ecological Economics, Vol. 84. <https://doi.org/10.1016/j.ecolecon.2012.08.017>.
+- Massé, E. (2021) Three Years under the EU GDPR: An Implementation Progress Report, Access Now report. <https://www.accessnow.org/gdpr-three-years/>.
 - McDonough, W. and Braungart, M. (2002) Cradle to Cradle: Remaking the Way We Make Things, North Point Press, New York. ISBN 978-0865475878.
 - Mitchell, M. (2019) Artificial Intelligence: A Guide for Thinking Humans, Pelican Books, UK. ISBN 978-0374257835.
-- Patterson, D. et al. (2022) The Carbon Footprint of Machine Learning Training Will Plateau, Then Shrink, IEEE Computer, accepted for publication. https://doi.org/10.36227/techrxiv.19139645.v4.
-- Pretz, K. (2021) Stop Calling Everything AI, Machine-Learning Pioneer Says, The Institute, IEEE. https://spectrum.ieee.org/stop-calling-everything-ai-machinelearning-pioneer-says.
+- Patterson, D. et al. (2022) The Carbon Footprint of Machine Learning Training Will Plateau, Then Shrink, IEEE Computer, accepted for publication. <https://doi.org/10.36227/techrxiv.19139645.v4>.
+- Pretz, K. (2021) Stop Calling Everything AI, Machine-Learning Pioneer Says, The Institute, IEEE. <https://spectrum.ieee.org/stop-calling-everything-ai-machinelearning-pioneer-says>.
 - Raworth, K. (2017) Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist, Chelsea Green Publishing, White River Junction, Vermont. ISBN 978-1603586740.
-- Rolnick, D. et al. (2022) Tackling Climate Change with Machine Learning, ACM Computing Surveys, Vol. 55(2). https://doi.org/10.1145/3485128.
+- Rolnick, D. et al. (2022) Tackling Climate Change with Machine Learning, ACM Computing Surveys, Vol. 55(2). <https://doi.org/10.1145/3485128>.
 - Schwab, K. and Vanham, P. (2021) Stakeholder Capitalism: A Global Economy that Works for Progress, People and Planet, John Wiley & Sons, Inc., Hoboken, New Jersey. ISBN 978-1119756132.
-- Strubell, E. et al. (2020) Energy and Policy Considerations for Modern Deep Learning Research, AAAI Conference on Artificial Intelligence. https://doi.org/10.1609/aaai.v34i09.7123.
-- Tuia, D. et al. (2022) Perspectives in machine learning for wildlife conservation, Nature Communications, Vol. 13. https://doi.org/10.1038/s41467-022-27980-y.
-- Whittaker, M. (2021) The Steep Cost of Capture, ACM Interactions, Vol. 28(6). https://doi.org/10.1145/3488666.
-- Wolff Anthony, L. F. et al. (2020) Carbontracker: Tracking and Predicting the Carbon Footprint of Training Deep Learning Models, ICML Workshop on Challenges in Deploying and monitoring Machine Learning Systems. https://doi.org/10.48550/arxiv.2007.03051.
+- Strubell, E. et al. (2020) Energy and Policy Considerations for Modern Deep Learning Research, AAAI Conference on Artificial Intelligence. <https://doi.org/10.1609/aaai.v34i09.7123>.
+- Tuia, D. et al. (2022) Perspectives in machine learning for wildlife conservation, Nature Communications, Vol. 13. <https://doi.org/10.1038/s41467-022-27980-y>.
+- Whittaker, M. (2021) The Steep Cost of Capture, ACM Interactions, Vol. 28(6). <https://doi.org/10.1145/3488666>.
+- Wolff Anthony, L. F. et al. (2020) Carbontracker: Tracking and Predicting the Carbon Footprint of Training Deep Learning Models, ICML Workshop on Challenges in Deploying and monitoring Machine Learning Systems. <https://doi.org/10.48550/arxiv.2007.03051>.
 - Zuboff, S. (2019) The Age of Surveillance Capitalism, Profile Books, UK. ISBN 978-1610395694.
 
 -----
