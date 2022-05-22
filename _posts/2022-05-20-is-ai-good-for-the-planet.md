@@ -117,7 +117,7 @@ Instead, it may serve as a spark for public discourse and an urgent call to acti
 Given its brevity and its non-technical, opinionated and engaging writing style, it is well-positioned to achieve this aim.
 
 ### References
-- Bughin, J. et al. (2018) Notes from the AI frontier: Modeling the impact of AI on the world economy, McKinsey Global Institute report. https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning.
+- Bughin, J. et al. (2018) Notes from the AI frontier: Modeling the impact of AI on the world economy, McKinsey Global Institute report. <https://www.mckinsey.com/featured-insights/artificial-intelligence/notes-from-the-ai-frontier-applications-and-value-of-deep-learning>.
 - Chui, M. et al. (2021) The state of AI in 2021, McKinsey Global Institute report. https://www.mckinsey.com/business-functions/quantumblack/our-insights/global-survey-the-state-of-ai-in-2021.
 - Crawford, K. (2021) Atlas of AI, Yale University Press. ISBN 978-0300209570.
 - Gupta, U. et al. (2021) Chasing Carbon: The Elusive Environmental Footprint of Computing, IEEE International Symposium on High-Performance Computer Architecture (HPCA). https://doi.org/10.1109/HPCA51647.2021.00076.
