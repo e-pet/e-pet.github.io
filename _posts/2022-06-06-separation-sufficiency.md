@@ -17,20 +17,24 @@ In the following, assume that we have $n$ groups, $a=1$ , ..., $a=n$, and a bina
 
 A classifier fulfills **separation** if $R⊥A | Y$, i.e., the risk score $R$ is independent of the group assignment $A$ given the (observed) outcome $Y$.
 In the binary outcome case, this translates to *balance of the average score in the positive/negative class* (Kleinberg et a. 2016), i.e.,
+
 $$
 \begin{gather}
 E_{a=i, y=T}[R] = E_{a=j, y=T}[R] \\
 E_{a=i, y=F}[R] = E_{a=j, y=F}[R]
 \end{gather}
 $$
+
 for all pairs of groups $(i,j)$.
 This seems like a reasonable requirement: we would like the classifier to be 'equally sure' about its predictions in all groups; otherwise, something must be off – right? (Wrong! Read on...)
 
 A classifier fulfills **sufficiency** if $Y⊥A | R$, i.e., the observed outcome $Y$ is independent of the group assignment $A$ given the risk score $R$.
 A slightly stronger requirement (see Barocas et al. for a derivation that this is indeed a stronger requirement) is that the classifier be **calibrated by group**, i.e., that it satisfies
+
 $$
 P(T|R=r, a=i) = r \quad \forall\, r, i \in \mathop{supp_i}(R) \times \{1, \ldots, n\}.
 $$
+
 This is a property that certainly is very desirable for any model to be employed in a high-stakes environment, such as healthcare (my main field).
 Fortunately, it is also a property that is optimized for by most standard learning procedures, [including maximum likelihood estimation / cross-entropy minimization](https://e-pet.github.io/posts/2022/2022-04-03-maximum-likelihood/).
 
@@ -43,6 +47,7 @@ This sounds like a real bummer, so let us try to understand why it is that the t
 **Most of the following discussion is very closely based on Kleinberg et al. 2016. I take no credit whatsoever for the ideas presented below.**
 
 Given a group-wise calibrated risk score, we find the average risk score in group $i$ to be
+
 $$
 \begin{align}
 E_{a=i}[R] &= \int r \cdot P(r|a=i) \,\mathrm dr \\
@@ -51,15 +56,20 @@ E_{a=i}[R] &= \int r \cdot P(r|a=i) \,\mathrm dr \\
 &= P(T|a=i),
 \end{align}
 $$
+
 i.e., it is equal to that group's _base rate_ (as one might expect!), which we will denote by $P(T|a=i) \eqqcolon p_i$.
 Equivalently, we can decompose the average risk score into two terms as
+
 $$
 E_{a=i}[R] = p_i = p_i \cdot E_{a=i, y=T}[R] + (1-p_i) \cdot E_{a=i, y=F}[R].
 $$
+
 Now set $x_i\coloneqq E_{a=i, y_i=F}[R]$ and $y_i \coloneqq E_{a=i, y=T}[R]$, and it becomes apparent that the average scores in the positive / negative classes of each group must satisfy the line equation
+
 $$
 	y_i = 1 - \frac{1-p_i}{p_i} x_i
 $$
+
 if the risk score is calibrated by group.
 
 ![](2022-01-19-Separation-sufficiency.png)
@@ -93,18 +103,24 @@ True | $TP_1=40$, $TP_2=10$ | $FN_1=FN_2=0$
 False | $FP_1=2, FP_2=8$ | $TN_1=8, TN_2=32$
 
 Thus, the classifier has
+
 $$ TPR = \frac{TP}{P} = 1$$
+
 for both classes and
+
 $$ FPR_1 = \frac{FP}{N} = \frac{2}{10} = 0.2 = \frac{8}{40} = FPR_2.$$
+
 Thus, we have equal TPR and FPR across groups.
 This is *not* equivalent to achieving separation, though!
 
 Moreover, we have the positive predictive values
+
 $$ PPV_1 = \frac{TP}{TP+FP} = \frac{40}{42} \neq \frac{10}{18} = PPV_2$$
 
 So far, we did not have to take this risk scores $R$ returned by the classifier into account at all!
 Up until this point, we only looked at TPR/FPR/PPV etc., all of which are functions of the risk score _and_ the selected classification thresholds.
 To achieve **calibration by group**, we simply assign the correct classification probabilities as risk scores:
+
 $$
 \begin{align}
 &P(T|R=40/42, a=1) = PPV_1 = \frac{40}{42} \\
@@ -113,13 +129,16 @@ $$
 &P(T|R=0, a=2) = (1-NPV_2) = 0 \\
 \end{align}
 $$
+
 From Theorem 1.1 in Kleinberg et al. (2016) and our discussion above, we already know that this classifier *cannot* achieve separation. To check this, we simply observe that
+
 $$
 \begin{gather}
 E_{a=1,y=T}[R] = \frac{40}{42} \neq E_{a=2,y=T}[R] = \frac{10}{18}\\
 E_{a=1, y=F}[R] = \frac{2 \cdot 40/42}{10} = \frac{4}{21} \neq E_{a=2, y=F}[R] = \frac{8 \cdot 10/18}{40} = \frac{1}{9}.
 \end{gather}
 $$
+
 So, in the example above, we *have* error rate (TPR, FPR) balance and calibration by group, but we do *not* have separation (as would be impossible as per the above result).
 
 However, in the general setting, it is unlikely that it will be possible to achieve both perfect calibration by group and error rate balance:
