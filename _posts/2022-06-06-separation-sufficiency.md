@@ -59,15 +59,14 @@ E_{a=i}[R] &= \int r \cdot P(r|a=i) \,\mathrm dr \\
 \end{align}
 $$
 
-i.e., it is equal to that group's _base rate_ (as one might expect!), which we will denote by $P(T|a=i) \eqqcolon p_i$.
+i.e., it is equal to that group's _base rate_ (as one might expect!), which we will denote by $P(T|a=i) =: p_i$.
 Equivalently, we can decompose the average risk score into two terms as
 
 $$
 E_{a=i}[R] = p_i = p_i \cdot E_{a=i, y=T}[R] + (1-p_i) \cdot E_{a=i, y=F}[R].
-\usepackage{mathtools}
 $$
 
-Now set $x_i\coloneqq E_{a=i, y_i=F}[R]$ and $y_i \coloneqq E_{a=i, y=T}[R]$, and it becomes apparent that the average scores in the positive / negative classes of each group must satisfy the line equation
+Now set $x_i := E_{a=i, y_i=F}[R]$ and $y_i := E_{a=i, y=T}[R]$, and it becomes apparent that the average scores in the positive / negative classes of each group must satisfy the line equation
 
 $$
 	y_i = 1 - \frac{1-p_i}{p_i} x_i
