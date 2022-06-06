@@ -26,7 +26,7 @@ $$
 for all pairs of groups $(i,j)$.
 This seems like a reasonable requirement: we would like the classifier to be 'equally sure' about its predictions in all groups; otherwise, something must be off – right? (Wrong! Read on...)
 
-A classifier fulfills **sufficiency** if *Y⊥A | R*, i.e., the observed outcome *Y* is independent of the group assignment *A* given the risk score *R*.
+A classifier fulfills **sufficiency** if $Y⊥A | R$, i.e., the observed outcome $Y$ is independent of the group assignment $A$ given the risk score $R$.
 A slightly stronger requirement (see Barocas et al. for a derivation that this is indeed a stronger requirement) is that the classifier be **calibrated by group**, i.e., that it satisfies
 $$
 P(T|R=r, a=i) = r \quad \forall\, r, i \in \mathop{supp_i}(R) \times \{1, \ldots, n\}.
