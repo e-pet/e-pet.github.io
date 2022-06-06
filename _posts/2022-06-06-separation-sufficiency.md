@@ -84,14 +84,16 @@ To achieve separation, we would need equality of $x_i$ and $y_i$ for all $i$, i.
 This, however, can only happen if all the base rates $p_i$ are equal (in this case, all lines are identical) or if $y_i=1$ for all $i$, i.e., the classifier is perfect.
 In all other cases, separation and sufficiency are not compatible.
 
-The **essential intuition** here is that the average score of a calibrated classifier within each group is equal to the base rate of that group.
+The *essential intuition* here is that the average score of a calibrated classifier within each group is equal to the base rate of that group.
 From this, it is already almost apparent that equal average risk scores in the positive/negative classes of each group cannot be achieved, if there are base rate differences (and the classifier is not perfect).
 
 
 ### (Limited) compatibility of calibration and error rate balance
 Notice that it is certainly feasible to construct a classifier that is 
-a) calibrated by group, and
-b) achieves *error rate parity*, i.e., equal TPR and FPR across groups!
+<ol type="a">
+  <li>calibrated by group, and</li>
+  <li>achieves <i>error rate parity</i>, i.e., equal TPR and FPR across groups!</li>
+</ol>
 
 The following example will illustrate this.
 Assume we have two classes, $a=1$ and $a=2$, and a binary outcome, $y\in \{True, False\}$. The two groups have varying base-rates:
