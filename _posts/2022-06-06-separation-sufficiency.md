@@ -10,7 +10,7 @@ tags:
 ---
 
 In the field of algorithmic fairness, it is well known that there are several definitions of fairness that are impossible to reconcile except in (practically irrelevant) corner cases.
-In this context, I have recently tried to wrap my head around why – intuitively – it is impossible for any classifier to achieve *separation* and *sufficiency* at the same time (unless a) the classifier is a perfect classifier or b) there are no base rate differences between groups – we will get to these details in a minute).
+In this context, I have recently tried to wrap my head around why – intuitively – it is impossible for any classifier to achieve *separation* and *sufficiency* at the same time (unless either the classifier is a perfect classifier or there are no base rate differences between groups – we will get to these details in a minute).
 Since part of my troubles arose from a misunderstanding of what separation and sufficiency actually mean, let us start by revisiting their definitions.
 
 In the following, assume that we have $n$ groups, $a=1$ , ..., $a=n$, and a binary outcome, $y\in \{True, False\}$, and assume that we are analyzing a classifier that returns a *risk score* $r\in [0, 1]$. 
@@ -46,7 +46,7 @@ Now, unfortunately, it is a well-known result (due to Kleinberg et al. 2016) tha
 This sounds like a real bummer, so let us try to understand why it is that the two conditions are incompatible.
 
 ### Incompatibility of separation and sufficiency
-**Most of the following discussion is very closely based on Kleinberg et al. 2016. I take no credit whatsoever for the ideas presented below.**
+*This section is very closely based on Kleinberg et al. 2016. I take no credit whatsoever for the ideas presented below.*
 
 Given a group-wise calibrated risk score, we find the average risk score in group $i$ to be
 
