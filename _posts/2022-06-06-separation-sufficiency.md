@@ -39,8 +39,10 @@ This is a property that certainly is very desirable for any model to be employed
 Fortunately, it is also a property that is optimized for by most standard learning procedures, [including maximum likelihood estimation / cross-entropy minimization](https://e-pet.github.io/posts/2022/2022-04-03-maximum-likelihood/).
 
 Now, unfortunately, it is a well-known result (due to Kleinberg et al. 2016) that these two properties cannot hold at the same time *for any classifier* – regardless of model class, how it is constructed, etc. – except if either
-a) the classifier is *perfect*, i.e., always returns the correct prediction for all samples, or
-b) the base rates $p(y|a)$ are the same in all groups.
+<ol type="a">
+  <li>the classifier is *perfect*, i.e., always returns the correct prediction for all samples, or</li>
+  <li>the base rates $p(y|a)$ are the same in all groups.</li>
+</ol>
 This sounds like a real bummer, so let us try to understand why it is that the two conditions are incompatible.
 
 ### Incompatibility of separation and sufficiency
