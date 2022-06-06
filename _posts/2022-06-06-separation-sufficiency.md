@@ -1,5 +1,5 @@
 ---
-title: "Book review: Is AI good for the planet?"
+title: "Calibration by group, error rate parity, sufficiency, and separation"
 permalink: /posts/2022/2022-06-06-separation-sufficiency/
 date: 2022-06-06
 read_time: False
