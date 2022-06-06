@@ -64,6 +64,7 @@ Equivalently, we can decompose the average risk score into two terms as
 
 $$
 E_{a=i}[R] = p_i = p_i \cdot E_{a=i, y=T}[R] + (1-p_i) \cdot E_{a=i, y=F}[R].
+\usepackage{mathtools}
 $$
 
 Now set $x_i\coloneqq E_{a=i, y_i=F}[R]$ and $y_i \coloneqq E_{a=i, y=T}[R]$, and it becomes apparent that the average scores in the positive / negative classes of each group must satisfy the line equation
@@ -74,7 +75,10 @@ $$
 
 if the risk score is calibrated by group.
 
-![](2022-01-19-Separation-sufficiency.png)
+<figure style="width: 450px" class="align-center">
+  <a href="/images/2022-01-19-Separation-sufficiency.png" title="Visualization of the incompatibility of separation and sufficiency" alt="Visualization of the incompatibility of separation and sufficiency">
+  <img src="/images/2022-01-19-Separation-sufficiency.png"></a>
+</figure>
 
 To achieve separation, we would need equality of $x_i$ and $y_i$ for all $i$, i.e., all lines would have to intersect.
 This, however, can only happen if all the base rates $p_i$ are equal (in this case, all lines are identical) or if $y_i=1$ for all $i$, i.e., the classifier is perfect.
