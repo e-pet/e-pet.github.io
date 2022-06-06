@@ -32,7 +32,7 @@ A classifier fulfills **sufficiency** if $Y⊥A | R$, i.e., the observed outcome
 A slightly stronger requirement (see Barocas et al. for a derivation that this is indeed a stronger requirement) is that the classifier be **calibrated by group**, i.e., that it satisfies
 
 $$
-P(T|R=r, a=i) = r \quad \forall\, r, i \in \mathop{supp_i}(R) \times \{1, \ldots, n\}.
+P(T|R=r, a=i) = r \quad \forall\, r \in \mathop{supp_i}(R), \quad i \in \{1, \ldots, n\}.
 $$
 
 This is a property that certainly is very desirable for any model to be employed in a high-stakes environment, such as healthcare (my main field).
