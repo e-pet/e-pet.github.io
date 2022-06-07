@@ -13,7 +13,7 @@ In the field of algorithmic fairness, it is well known that there are several de
 In this context, I have recently tried to wrap my head around why – intuitively – it is impossible for any classifier to achieve *separation* and *sufficiency* at the same time (unless either the classifier is a perfect classifier or there are no base rate differences between groups – we will get to these details in a minute).
 Since part of my troubles arose from a misunderstanding of what separation and sufficiency actually mean, let us start by revisiting their definitions.
 
-In the following, assume that we have $n$ groups, $a=1$ , ..., $a=n$, and a binary outcome, $y\in \{True, False\}$, and assume that we are analyzing a classifier that returns a *risk score* $r\in [0, 1]$. 
+In the following, assume that we have $n$ groups, $a=1$ , ..., $a=n$, and a binary outcome, $y\in \{True, False\}$, and assume that we are analyzing a classifier that returns a *risk score* $r\in [0, 1].$ 
 
 A classifier fulfills **separation** if $R⊥A | Y$, i.e., the risk score $R$ is independent of the group assignment $A$ given the (observed) outcome $Y$.
 In the binary outcome case, this translates to *balance of the average score in the positive/negative class* (Kleinberg et a. 2016), i.e.,
@@ -154,9 +154,11 @@ this requires that the ROC curves for the two groups intersect at these error ra
 It is highly unlikely that this will hold in any practical scenario:
 even disregarding the exact shape of the ROC curve, a weaker requirement would be that the AUROCs for the two groups should be equal, i.e., the discriminative power of the model should be identical for the two groups.
 There is no reason to expect this to be true, and the only way of enforcing this would be to actively reduce performance on the better-performing group.
+Of course, when there are large discrepancies in discriminative performance for different groups (as indicated, e.g., by widely differing AUROC values), one should, firstly, try to improve performance in the underperforming group (by, e.g., changing the model, gathering more data, or accounting for measurement biases) and, secondly, be transparent about these performance disparities as they will impact downstream applications of the model.
+Nevertheless, this will almost surely not lead to identical ROC curves for the different groups, and, thus, calibration by group and (exact) error rate balance will still not be achievable at the same time.
 
 ### References
 - Kleinberg, Mullainathan, Raghavan (2016) *Inherent Trade-Offs in the Fair Determination of Risk Scores.* [arxiv link](http://arxiv.org/abs/1609.05807v2)
-- Barocas, Hardt, Narayanan (2021) *Fairness and Machine Learning*. <https://fairmlbook.org/>. **Caution**: while certainly a useful resource, the book is not yet finished, and some proofs and derivations did not seem fully rigorous and convincing to me. In particular, I find the discussion of separation in the current version to be misleading (it is based on Hard, Price, Srebro (2016), *Equality of Opportunity in Supervised Learning*), as it seems to suggest that separation is identical to achieving error rate balance in binary classification. This is only the case when assessing separation w.r.t. the classifier's _predictions_ $\hat{y}\in\{0,1\}$ (which seems like a weird thing to do to me), however, and not when assessing separation w.r.t. the _risk scores_ $r\in [0,1]$ (see above), as discussed above.
+- Barocas, Hardt, Narayanan (2021) *Fairness and Machine Learning*. <https://fairmlbook.org/>. **Caution**: while certainly a useful resource, the book is not yet finished, and some proofs and derivations did not seem fully rigorous and convincing to me. In particular, I find the discussion of separation in the current version to be misleading (it is based on Hard, Price, Srebro (2016), *Equality of Opportunity in Supervised Learning*), as it seems to suggest that separation is identical to achieving error rate balance in binary classification. This is only the case when assessing separation w.r.t. the classifier's _predictions_ $\hat{y}\in\{0,1\}$ (which seems like a weird thing to do to me), however, and not when assessing separation w.r.t. the _risk scores_ $r\in [0,1]$, as we did above.
 
 -----
