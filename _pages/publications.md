@@ -8,6 +8,12 @@ redirect_from:
 {% include base_path %}
 
 ## Journal publications
+### 2022
+Petersen, Potdevin, Mohammadi, Zidowitz, Breyer, Nowotka, Henn, Pechmann, Leucker, Rostalski, Herzog
+*Responsible and Regulatory Conform Machine Learning for Medicine: A Survey of Challenges and Solutions*
+IEEE Access, vol. 10, pp. 58375-58418, 2022
+[[Link]](https://doi.org/10.1109/ACCESS.2022.3178382)
+
 ### 2021
 Graßhoff, Petersen, Farquharson, Kustermann, Kabitz, Rostalski, Walterspacher  
 *Surface EMG-based quantification of inspiratory effort: a quantitative comparison with Pes*  
@@ -17,7 +23,7 @@ Critical Care, vol. 25, no. 441, 2021
 ### 2020
 Petersen, Sauer, Graßhoff, Rostalski  
 *Removing Cardiac Artifacts From Single-Channel Respiratory Electromyograms*  
-IEEE Access, no. 8, pp. 30905-30917, 2020  
+IEEE Access, vol. 8, pp. 30905-30917, 2020  
 [[Link]](https://ieeexplore.ieee.org/document/8988257/) [[Associated toolbox]](https://github.com/e-pet/ecg-removal) [[Reproducible code capsule]](https://codeocean.com/capsule/2933724/tree/v1)
 
 ### 2019
@@ -38,17 +44,13 @@ Biomedical Engineering/Biomedizinische Technik, no. 62, pp. 171-181, 2017
 [[Link]](https://www.degruyter.com/document/doi/10.1515/bmt-2016-0092/html)
 
 
-## Preprints (not peer-reviewed)
+## Conference publications
+
+### 2022
 Petersen, Feragen, da Costa Zemsch, Henriksen, Wiese Christensen, Ganz  
 *Feature robustness and sex differences in medical imaging: a case study in MRI-based Alzheimer's disease detection*  
-[[arxiv link]](https://arxiv.org/abs/2204.01737)
-
-Petersen, Potdevin, Mohammadi, Zidowitz, Breyer, Nowotka, Henn, Pechmann, Leucker, Rostalski, Herzog  
-*Responsible and Regulatory Conform Machine Learning for Medicine: A Survey of Technical Challenges and Solutions*  
-[[arxiv link]](https://arxiv.org/abs/2107.09546)
-
-
-## Conference publications
+Accepted at MICCAI 2022
+[[arxiv preprint link]](https://arxiv.org/abs/2204.01737)
 
 ### 2020
 Petersen, Graßhoff, Eger, Rostalski  
