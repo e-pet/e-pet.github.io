@@ -9,9 +9,9 @@ redirect_from:
 
 ## Journal publications
 ### 2022
-Petersen, Potdevin, Mohammadi, Zidowitz, Breyer, Nowotka, Henn, Pechmann, Leucker, Rostalski, Herzog
-*Responsible and Regulatory Conform Machine Learning for Medicine: A Survey of Challenges and Solutions*
-IEEE Access, vol. 10, pp. 58375-58418, 2022
+Petersen, Potdevin, Mohammadi, Zidowitz, Breyer, Nowotka, Henn, Pechmann, Leucker, Rostalski, Herzog  
+*Responsible and Regulatory Conform Machine Learning for Medicine: A Survey of Challenges and Solutions*  
+IEEE Access, vol. 10, pp. 58375-58418, 2022  
 [[Link]](https://doi.org/10.1109/ACCESS.2022.3178382)
 
 ### 2021
@@ -49,7 +49,7 @@ Biomedical Engineering/Biomedizinische Technik, no. 62, pp. 171-181, 2017
 ### 2022
 Petersen, Feragen, da Costa Zemsch, Henriksen, Wiese Christensen, Ganz  
 *Feature robustness and sex differences in medical imaging: a case study in MRI-based Alzheimer's disease detection*  
-Accepted at MICCAI 2022
+Accepted at MICCAI 2022  
 [[arxiv preprint link]](https://arxiv.org/abs/2204.01737)
 
 ### 2020
