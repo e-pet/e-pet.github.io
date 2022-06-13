@@ -15,7 +15,7 @@ Since part of my troubles arose from a misunderstanding of what separation and s
 
 In the following, assume that we have $n$ groups, $a=1$ , ..., $a=n$, and a binary outcome, $y\in \{True, False\}$, and assume that we are analyzing a classifier that returns a *risk score* $r\in [0, 1].$ 
 
-A classifier fulfills **separation** if $R⊥A | Y$, i.e., the risk score $R$ is independent of the group assignment $A$ given the (observed) outcome $Y$.
+A classifier fulfills **separation** if $R \perp A \vert Y$, i.e., the risk score $R$ is independent of the group assignment $A$ given the (observed) outcome $Y$.
 In the binary outcome case, this translates to *balance of the average score in the positive/negative class* (Kleinberg et a. 2016), i.e.,
 
 $$
@@ -28,11 +28,11 @@ $$
 for all pairs of groups $(i,j)$.
 This seems like a reasonable requirement: we would like the classifier to be 'equally sure' about its predictions in all groups; otherwise, something must be off – right? (Wrong! Read on...)
 
-A classifier fulfills **sufficiency** if $Y⊥A | R$, i.e., the observed outcome $Y$ is independent of the group assignment $A$ given the risk score $R$.
+A classifier fulfills **sufficiency** if $Y \perp A \vert R$, i.e., the observed outcome $Y$ is independent of the group assignment $A$ given the risk score $R$.
 A slightly stronger requirement (see Barocas et al. for a derivation that this is indeed a stronger requirement) is that the classifier be **calibrated by group**, i.e., that it satisfies
 
 $$
-P(T|R=r, a=i) = r \quad \forall\, r \in \mathop{supp_i}(R), \quad i \in \{1, \ldots, n\}.
+P(T \mid R=r, a=i) = r \quad \forall\, r \in \mathop{supp_i}(R), \quad i \in \{1, \ldots, n\}.
 $$
 
 This is a property that certainly is very desirable for any model to be employed in a high-stakes environment, such as healthcare (my main field).
@@ -52,14 +52,14 @@ Given a group-wise calibrated risk score, we find the average risk score in grou
 
 $$
 \begin{align}
-E_{a=i}[R] &= \int r \cdot P(r|a=i) \,\mathrm dr \\
-&= \int P(T|R=r, a=i) \cdot P(r|a=i) \,\mathrm dr \\
-&= \int P(T, r | a=i) \,\mathrm dr \\
-&= P(T|a=i),
+E_{a=i}[R] &= \int r \cdot P(r \mid a=i) \,\mathrm dr \\
+&= \int P(T|R=r, a=i) \cdot P(r \mid a=i) \,\mathrm dr \\
+&= \int P(T, r \mid a=i) \,\mathrm dr \\
+&= P(T \mid a=i),
 \end{align}
 $$
 
-i.e., it is equal to that group's _base rate_ (as one might expect!), which we will denote by $P(T|a=i) =: p_i$.
+i.e., it is equal to that group's _base rate_ (as one might expect!), which we will denote by $P(T \mid a=i) =: p_i$.
 Equivalently, we can decompose the average risk score into two terms as
 
 $$
