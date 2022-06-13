@@ -13,7 +13,7 @@ In the field of algorithmic fairness, it is well known that there are several de
 In this context, I have recently tried to wrap my head around why – intuitively – it is impossible for any classifier to achieve *separation* and *sufficiency* at the same time (unless either the classifier is a perfect classifier or there are no base rate differences between groups – we will get to these details in a minute).
 Since part of my troubles arose from a misunderstanding of what separation and sufficiency actually mean, let us start by revisiting their definitions.
 
-In the following, assume that we have $n$ groups, $a=1$ , ..., $a=n$, and a binary outcome, $y\in \{True, False\}$, and assume that we are analyzing a classifier that returns a *risk score* $r\in [0, 1].$ 
+In the following, assume that we have $n$ groups, $a=1$ , ..., $a=n$, and a binary outcome, $y\in \lbrace \text{True}, \text{False} \rbrace$, and assume that we are analyzing a classifier that returns a *risk score* $r\in [0, 1].$ 
 
 A classifier fulfills **separation** if $R \perp A \vert Y$, i.e., the risk score $R$ is independent of the group assignment $A$ given the (observed) outcome $Y$.
 In the binary outcome case, this translates to *balance of the average score in the positive/negative class* (Kleinberg et a. 2016), i.e.,
@@ -40,8 +40,8 @@ Fortunately, it is also a property that is optimized for by most standard learni
 
 Now, unfortunately, it is a well-known result (due to Kleinberg et al. 2016) that these two properties cannot hold at the same time *for any classifier* – regardless of model class, how it is constructed, etc. – except if either
 <ol type="a">
-  <li>the classifier is *perfect*, i.e., always returns the correct prediction for all samples, or</li>
-  <li>the base rates $p(y|a)$ are the same in all groups.</li>
+  <li>the classifier is <i>perfect</i>, i.e., always returns the correct prediction for all samples, or</li>
+  <li>the base rates $p(y \mid a)$ are the same in all groups.</li>
 </ol>
 This sounds like a real bummer, so let us try to understand why it is that the two conditions are incompatible.
 
@@ -95,9 +95,9 @@ Notice that it is certainly feasible to construct a classifier that is
 </ol>
 
 The following example will illustrate this.
-Assume we have two classes, $a=1$ and $a=2$, and a binary outcome, $y\in \{True, False\}$. The two groups have varying base-rates:
+Assume we have two classes, $a=1$ and $a=2$, and a binary outcome, $y\in \lbrace \text{True}, \text{False} \rbrace$. The two groups have varying base-rates:
  
-Class label $a$ |  $y=True$ | $y=False$
+Class label $a$ |  $y=\text{True}$ | $y=\text{False}$
 --------- |  - | -
   Group 1  | 40 | 10
   Group 2  | 10 | 40
@@ -106,34 +106,34 @@ Assume furthermore that we have a classifier with the following confusion table:
 
 Actual outcome \ predicted outcome | True | False
 ---- | ----- | ----
-True | $TP_1=40$, $TP_2=10$ | $FN_1=FN_2=0$
-False | $FP_1=2, FP_2=8$ | $TN_1=8, TN_2=32$
+True | $\mathrm{TP}_1=40$, $\mathrm{TP}_2=10$ | $\mathrm{FN}_1=\mathrm{FN}_2=0$
+False | $\mathrm{FP}_1=2, \mathrm{FP}_2=8$ | $\mathrm{TN}_1=8, \mathrm{TN}_2=32$
 
 Thus, the classifier has
 
-$$ TPR = \frac{TP}{P} = 1$$
+$$ \mathrm{TPR} = \frac{\mathrm{TP}}{\mathrm{P}} = 1$$
 
 for both classes and
 
-$$ FPR_1 = \frac{FP}{N} = \frac{2}{10} = 0.2 = \frac{8}{40} = FPR_2.$$
+$$ \mathrm{FPR}_1 = \frac{\mathrm{FP}}{\mathrm{N}} = \frac{2}{10} = 0.2 = \frac{8}{40} = \mathrm{FPR}_2.$$
 
-Thus, we have equal TPR and FPR across groups.
+Thus, we have equal $\mathrm{TPR}$ and $\mathrm{FPR}$ across groups.
 This is *not* equivalent to achieving separation, though!
 
 Moreover, we have the positive predictive values
 
-$$ PPV_1 = \frac{TP}{TP+FP} = \frac{40}{42} \neq \frac{10}{18} = PPV_2$$
+$$ \mathrm{PPV}_1 = \frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FP}} = \frac{40}{42} \neq \frac{10}{18} = \mathrm{PPV}_2$$
 
 So far, we did not have to take this risk scores $R$ returned by the classifier into account at all!
-Up until this point, we only looked at TPR/FPR/PPV etc., all of which are functions of the risk score _and_ the selected classification thresholds.
+Up until this point, we only looked at $\mathrm{TPR}$ / $\mathrm{FPR}$ / $\mathrm{PPV}$ etc., all of which are functions of the risk score _and_ the selected classification thresholds.
 To achieve **calibration by group**, we simply assign the correct classification probabilities as risk scores:
 
 $$
 \begin{align}
-&P(T|R=40/42, a=1) = PPV_1 = \frac{40}{42} \\
-&P(T|R=0, a=1) = (1-NPV_1) = 0 \\
-&P(T|R=10/18, a=2) = PPV_2 = \frac{10}{18} \\
-&P(T|R=0, a=2) = (1-NPV_2) = 0 \\
+&P(T|R=40/42, a=1) = \mathrm{PPV}_1 = \frac{40}{42} \\
+&P(T|R=0, a=1) = (1-\mathrm{NPV}_1) = 0 \\
+&P(T|R=10/18, a=2) = \mathrm{PPV}_2 = \frac{10}{18} \\
+&P(T|R=0, a=2) = (1-\mathrm{NPV}_2) = 0 \\
 \end{align}
 $$
 
@@ -146,7 +146,7 @@ E_{a=1, y=F}[R] = \frac{2 \cdot 40/42}{10} = \frac{4}{21} \neq E_{a=2, y=F}[R] =
 \end{gather}
 $$
 
-So, in the example above, we *have* error rate (TPR, FPR) balance and calibration by group, but we do *not* have separation (as would be impossible as per the above result).
+So, in the example above, we *have* error rate ($\mathrm{TPR}$, $\mathrm{FPR}$) balance and calibration by group, but we do *not* have separation (as would be impossible as per the above result).
 
 However, in the general setting, it is unlikely that it will be possible to achieve both perfect calibration by group and error rate balance:
 this requires that the ROC curves for the two groups intersect at these error rates.
