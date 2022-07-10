@@ -14,6 +14,16 @@ Petersen, Potdevin, Mohammadi, Zidowitz, Breyer, Nowotka, Henn, Pechmann, Leucke
 IEEE Access, vol. 10, pp. 58375-58418, 2022  
 [[Link]](https://doi.org/10.1109/ACCESS.2022.3178382)
 
+Graßhoff, Petersen, Walterspacher, Rostalski  
+*Model-based Estimation of Inspiratory Effort using Surface EMG*  
+IEEE Transactions on Biomedical Engineering  
+[[Link]](https://ieeexplore.ieee.org/abstract/document/9814853)
+
+Sauer, Streppel, Carbon, Petersen, Rostalski  
+*Blind source separation of inspiration and expiration in respiratory sEMG signals*  
+Physiological Measurement  
+[[Link]](https://iopscience.iop.org/article/10.1088/1361-6579/ac799c/meta)
+
 ### 2021
 Graßhoff, Petersen, Farquharson, Kustermann, Kabitz, Rostalski, Walterspacher  
 *Surface EMG-based quantification of inspiratory effort: a quantitative comparison with Pes*  
@@ -50,7 +60,7 @@ Biomedical Engineering/Biomedizinische Technik, no. 62, pp. 171-181, 2017
 Petersen, Feragen, da Costa Zemsch, Henriksen, Wiese Christensen, Ganz  
 *Feature robustness and sex differences in medical imaging: a case study in MRI-based Alzheimer's disease detection*  
 Accepted at MICCAI 2022  
-[[arxiv preprint link]](https://arxiv.org/abs/2204.01737)
+[[arxiv preprint link]](https://arxiv.org/abs/2204.01737) [[Code]](https://github.com/e-pet/adni-bias)
 
 ### 2020
 Petersen, Graßhoff, Eger, Rostalski  
