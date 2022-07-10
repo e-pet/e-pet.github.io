@@ -16,7 +16,7 @@ Since part of my troubles arose from a misunderstanding of what separation and s
 In the following, assume that we have $n$ groups, $a=1$ , ..., $a=n$, and a binary outcome, $y\in \lbrace \text{True}, \text{False} \rbrace$, and assume that we are analyzing a classifier that returns a *risk score* $r\in [0, 1].$ 
 
 A classifier fulfills **separation** if $R \perp A \vert Y$, i.e., the risk score $R$ is independent of the group assignment $A$ given the (observed) outcome $Y$.
-In the binary outcome case, this translates to *balance of the average score in the positive/negative class* (Kleinberg et a. 2016), i.e.,
+In the binary outcome case, this translates[^1] to *balance of the average score in the positive/negative class* (Kleinberg et a. 2016), i.e.,
 
 $$
 \begin{gather}
@@ -79,7 +79,7 @@ if the risk score is calibrated by group.
   <img src="/images/2022-01-19-Separation-sufficiency.png"></a>
 </figure>
 
-To achieve separation, we would need equality of $x_i$ and $y_i$ for all $i$, i.e., all lines would have to intersect.
+To achieve balance of the average scores, we would need equality of $x_i$ and $y_i$ for all $i$, i.e., all lines would have to intersect.
 This, however, can only happen if all the base rates $p_i$ are equal (in this case, all lines are identical) or if $y_i=1$ for all $i$, i.e., the classifier is perfect.
 In all other cases, separation and sufficiency are not compatible.
 
@@ -159,6 +159,8 @@ Nevertheless, this will almost surely not lead to identical ROC curves for the d
 
 ### References
 - Kleinberg, Mullainathan, Raghavan (2016) *Inherent Trade-Offs in the Fair Determination of Risk Scores.* [arxiv link](http://arxiv.org/abs/1609.05807v2)
-- Barocas, Hardt, Narayanan (2021) *Fairness and Machine Learning*. <https://fairmlbook.org/>. **Caution**: while certainly a useful resource, the book is not yet finished, and some proofs and derivations did not seem fully rigorous and convincing to me. In particular, I find the discussion of separation in the current version to be misleading (it is based on Hard, Price, Srebro (2016), *Equality of Opportunity in Supervised Learning*), as it seems to suggest that separation is identical to achieving error rate balance in binary classification. This is only the case when assessing separation w.r.t. the classifier's _predictions_ $\hat{y}\in\lbrace 0,1 \rbrace$ (which seems like a weird thing to do to me), however, and not when assessing separation w.r.t. the _risk scores_ $r\in [0,1]$, as we did above.
+- Barocas, Hardt, Narayanan (2021) *Fairness and Machine Learning*. <https://fairmlbook.org/>. **Note**: The discussion of separation in the book's current version (based on Hardt, Price, Srebro (2016), *Equality of Opportunity in Supervised Learning*) emphasizes assessing separation w.r.t. the classifier's _predictions_ $\hat{y}\in\lbrace 0,1 \rbrace$. This differs from the setting discussed above and by Kleinberg et al. (2016), where we consider separation w.r.t. the _risk scores_ $r\in [0,1]$.
+
+[^1]: Moritz Hardt very kindly pointed out to me that average score balance as defined in equations (1) and (2) is a *necessary* but not a *sufficient* condition for separation.
 
 -----
