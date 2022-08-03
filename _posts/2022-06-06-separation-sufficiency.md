@@ -88,10 +88,10 @@ From this, it is already almost apparent that equal average risk scores in the p
 
 
 ### (Limited) compatibility of calibration and error rate balance
-Notice that it is certainly feasible to construct a classifier that is 
+Notice that (contrary to claims to the opposite in the literature[^2]) it is possible to construct a classifier that is 
 <ol type="a">
   <li>calibrated by group, and</li>
-  <li>achieves <i>error rate parity</i>, i.e., equal TPR and FPR across groups!</li>
+  <li>achieves <i>error rate parity</i>, i.e., equal TPR and FPR across groups.</li>
 </ol>
 
 The following example will illustrate this.
@@ -160,7 +160,10 @@ Nevertheless, this will almost surely not lead to identical ROC curves for the d
 ### References
 - Kleinberg, Mullainathan, Raghavan (2016) *Inherent Trade-Offs in the Fair Determination of Risk Scores.* [arxiv link](http://arxiv.org/abs/1609.05807v2)
 - Barocas, Hardt, Narayanan (2021) *Fairness and Machine Learning*. <https://fairmlbook.org/>. **Note**: The discussion of separation in the book's current version (based on Hardt, Price, Srebro (2016), *Equality of Opportunity in Supervised Learning*) emphasizes assessing separation w.r.t. the classifier's _predictions_ $\hat{y}\in\lbrace 0,1 \rbrace$. This differs from the setting discussed above and by Kleinberg et al. (2016), where we consider separation w.r.t. the _risk scores_ $r\in [0,1]$.
+- Alexandra Chouldechova (2017) *Fair prediction with disparate impact: A study of bias in recidivism prediction instruments.* [arxiv link](https://arxiv.org/pdf/1610.07524.pdf)
 
 [^1]: Moritz Hardt very kindly pointed out to me that average score balance as defined in equations (1) and (2) is a *necessary* but not a *sufficient* condition for separation.
+[^2]: Chouldechova (2017) writes that "when the [...] prevalence differs between two groups, a [well-calibrated] score [...] cannot have equal false
+positive and negative rates across those groups." As the example above demonstrates, this is not true in general. It seems to me that it becomes true when one demands a categorization into just two risk categories (high risk / low risk), like Chouldechova does. (In our example above, the two groups would have different incidence rates in the "high-risk" category.)
 
 -----
