@@ -163,7 +163,6 @@ Nevertheless, this will almost surely not lead to identical ROC curves for the d
 - Alexandra Chouldechova (2017) *Fair prediction with disparate impact: A study of bias in recidivism prediction instruments.* [arxiv link](https://arxiv.org/pdf/1610.07524.pdf)
 
 [^1]: Moritz Hardt very kindly pointed out to me that average score balance as defined in equations (1) and (2) is a *necessary* but not a *sufficient* condition for separation.
-[^2]: Chouldechova (2017) writes that "when the [...] prevalence differs between two groups, a [well-calibrated] score [...] cannot have equal false
-positive and negative rates across those groups." As the example above demonstrates, this is not true in general. It seems to me that it becomes true when one demands a categorization into just two risk categories (high risk / low risk), like Chouldechova does. (In our example above, the two groups would have different incidence rates in the "high-risk" category.)
+[^2]: Chouldechova (2017) writes that "when the [...] prevalence differs between two groups, a [well-calibrated] score [...] cannot have equal false positive and negative rates across those groups." As the example above demonstrates, this is not true in general. It seems to me that it becomes true when one demands a categorization into just two risk categories (high risk / low risk), like Chouldechova does. (In our example above, the two groups would have different incidence rates in the "high-risk" category.)
 
 -----
