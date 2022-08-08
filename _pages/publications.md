@@ -22,7 +22,7 @@ IEEE Transactions on Biomedical Engineering
 Sauer, Streppel, Carbon, Petersen, Rostalski  
 *Blind source separation of inspiration and expiration in respiratory sEMG signals*  
 Physiological Measurement  
-[[Link]](https://iopscience.iop.org/article/10.1088/1361-6579/ac799c/meta)
+[[Link]](https://iopscience.iop.org/article/10.1088/1361-6579/ac799c/meta) <a href="files/Blind source separation of inspiration and expiration in respiratory sEMG signals [accepted].pdf" class="image fit">[Accepted Manuscript]</a>
 
 ### 2021
 Graßhoff, Petersen, Farquharson, Kustermann, Kabitz, Rostalski, Walterspacher  
