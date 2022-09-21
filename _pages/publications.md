@@ -24,6 +24,11 @@ Sauer, Streppel, Carbon, Petersen, Rostalski
 Physiological Measurement  
 [[Link]](https://iopscience.iop.org/article/10.1088/1361-6579/ac799c/meta) <a href="https://e-pet.github.io/files/Blind%20source%20separation%20of%20inspiration%20and%20expiration%20in%20respiratory%20sEMG%20signals%20[accepted].pdf">[Accepted Manuscript]</a>
 
+Koo-Poeggel, Neuwerk, Petersen, Graßhoff, Mölle, Martinetz, Marshall  
+*Closed-loop acoustic stimulation during an afternoon nap to modulate subsequent encoding*  
+Journal of Sleep Research  
+[[Link]](https://onlinelibrary.wiley.com/doi/10.1111/jsr.13734)
+
 ### 2021
 Graßhoff, Petersen, Farquharson, Kustermann, Kabitz, Rostalski, Walterspacher  
 *Surface EMG-based quantification of inspiratory effort: a quantitative comparison with Pes*  
@@ -74,7 +79,6 @@ Graßhoff, Petersen, Becher, Rostalski
 Proceedings of the 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), pp. 4646-4649, 2019  
 [[Link]](https://ieeexplore.ieee.org/document/8856345)
 
-
 ### 2018
 Olbrich, Petersen, Hoffmann, Rostalski  
 *Sparse Estimation for the Assessment of Muscular Activity based on sEMG Measurements*  
@@ -106,6 +110,12 @@ Petersen
 *A Mathematical Model of Surface Electromyographic Measurements*  
 Proceedings of the Workshop Biosignal Processing, Germany, 2016
 
+## Book reviews
+Petersen  
+Book Review: Is AI Good for the Planet? (Benedetta Brevini)  
+Prometheus  
+[[Official link]](https://www.scienceopen.com/hosted-document?doi=10.13169/prometheus.38.2.0246) [[Current version]](https://e-pet.github.io/posts/2022/2022-05-20-is-ai-good-for-the-planet/)  
+There are, unfortunately, some editing mistakes in the version published by the journal. Please prefer the version published on this website ("current version") over the journal version.
 
 ## Conference abstracts
 ### 2020
