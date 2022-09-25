@@ -12,9 +12,10 @@ tags:
 
 I recently had the opportunity to write a book review essay for [Prometheus – Critical Studies in Innovation](http://www.prometheusjournal.co.uk/).
 The book I reviewed is "Is AI good for the planet?" by Benedetta Brevini (2021), to be found [here](https://www.wiley.com/en-dk/Is+AI+Good+for+the+Planet%3F-p-9781509547944).
+I'd like to thank [Steven Umbrello](https://stevenumbrello.com/), the Prometheus book review editor, for entrusting me this review!
+
 Below you can find the full text of my review essay, which has been published by Prometheus [here](https://www.scienceopen.com/hosted-document?doi=10.13169/prometheus.38.2.0246).
 **Unfortunately, due to a mistake in the editing process, the journal version published under the above link is not the final, edited version. The text below represents the final version of the review as it should have been published.**
-I'd like to thank [Steven Umbrello](https://stevenumbrello.com/), the Prometheus book review editor, for entrusting me this review!
 
 -----
 
