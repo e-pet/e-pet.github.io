@@ -12,6 +12,7 @@ I think this is one of the many places where the 'boy scout rule' is applicable:
 > Leave every place better than you found it.
 
 In other words, when feeling overwhelmed by the challenge of doing *everything* right, just start with *something* and make it a little bit better.
+([Cultivate](https://montrealethics.ai/virtues-not-principles/) [virtues](https://www.scu.edu/ethics/ethics-resources/ethical-decision-making/ethics-and-virtue/).)
 
 Some things us **machine learning researchers** can do:
 - _evaluate_ our models thoroughly to prevent exaggerated performance claims [[1]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7222643/), [[2]](https://www.jclinepi.com/article/S0895-4356(18)31081-3/fulltext), [[3]](https://arxiv.org/abs/2011.03395)
@@ -20,7 +21,7 @@ Some things us **machine learning researchers** can do:
 - understand whether a problem really _requires_ (yet another) ML "solution"
 - perform an _algorithmic impact assessment_ [[1]](https://www.adalovelaceinstitute.org/wp-content/uploads/2020/04/Ada-Lovelace-Institute-DataKind-UK-Examining-the-Black-Box-Report-2020.pdf), [[2]](https://dl.acm.org/doi/pdf/10.1145/3442188.3445935), [[3]](http://z-inspection.org/)
 - assess the [climate impact of our ML projects](https://www.nature.com/articles/s42256-020-0219-9), and support the [Climate Change AI Initiative](https://www.climatechange.ai/)
-- engage critically in discussions regarding ethical usage of AI
+- engage critically in discussions regarding ethical usage of AI/ML
 
 
 Some things **all researchers** can do:
