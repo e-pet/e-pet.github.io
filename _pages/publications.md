@@ -7,6 +7,12 @@ redirect_from:
 
 {% include base_path %}
 
+## Preprints
+Petersen, Ganz, Holm, Feragen  
+*On (assessing) the fairness of risk score models*  
+[[arxiv]](https://arxiv.org/abs/2302.08851)
+
+
 ## Journal publications
 ### 2022
 Petersen, Potdevin, Mohammadi, Zidowitz, Breyer, Nowotka, Henn, Pechmann, Leucker, Rostalski, Herzog  
@@ -28,6 +34,11 @@ Koo-Poeggel, Neuwerk, Petersen, Graßhoff, Mölle, Martinetz, Marshall
 *Closed-loop acoustic stimulation during an afternoon nap to modulate subsequent encoding*  
 Journal of Sleep Research  
 [[Link]](https://onlinelibrary.wiley.com/doi/10.1111/jsr.13734)
+
+Oltmann, Petersen, Kusche, Rostalski  
+*Investigation of an Acceleration Pipeline for Single Fiber Action Potential Simulation*  
+Current Directions in Biomedical Engineering  
+[[Link]](https://www.degruyter.com/document/doi/10.1515/cdbme-2022-1069/pdf)
 
 ### 2021
 Graßhoff, Petersen, Farquharson, Kustermann, Kabitz, Rostalski, Walterspacher  
@@ -61,11 +72,17 @@ Biomedical Engineering/Biomedizinische Technik, no. 62, pp. 171-181, 2017
 
 ## Conference publications
 
+### 2023
+Zepf, Petersen, Frellsen, Feragen  
+*That Label's got Style: Handling Label Style Bias for Uncertain Image Segmentation*  
+ICLR 2023
+[[Accepted manuscript]](https://openreview.net/forum?id=wZ2SVhOTzBX)
+
 ### 2022
 Petersen, Feragen, da Costa Zemsch, Henriksen, Wiese Christensen, Ganz  
 *Feature robustness and sex differences in medical imaging: a case study in MRI-based Alzheimer's disease detection*  
-Accepted at MICCAI 2022  
-[[arxiv preprint link]](https://arxiv.org/abs/2204.01737) [[Code]](https://github.com/e-pet/adni-bias)
+MICCAI 2022  
+[[arxiv]](https://arxiv.org/abs/2204.01737) [[Proceedings]](https://link.springer.com/chapter/10.1007/978-3-031-16431-6_9) [[Code]](https://github.com/e-pet/adni-bias)
 
 ### 2020
 Petersen, Graßhoff, Eger, Rostalski  
