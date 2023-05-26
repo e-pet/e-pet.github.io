@@ -8,9 +8,9 @@ redirect_from:
 {% include base_path %}
 
 ## Preprints
-Petersen, Ganz, Holm, Feragen  
-*On (assessing) the fairness of risk score models*  
-[[arxiv]](https://arxiv.org/abs/2302.08851)
+Petersen, Ferrante, Ganz, Feragen  
+*Are demographically invariant models and representations in medical imaging fair?*  
+[[arxiv]](https://arxiv.org/abs/2305.01397)
 
 
 ## Journal publications
@@ -73,6 +73,11 @@ Biomedical Engineering/Biomedizinische Technik, no. 62, pp. 171-181, 2017
 ## Conference publications
 
 ### 2023
+Petersen, Ganz, Holm, Feragen  
+*On (assessing) the fairness of risk score models*  
+FAccT 2023
+[[arxiv]](https://arxiv.org/abs/2302.08851)
+
 Zepf, Petersen, Frellsen, Feragen  
 *That Label's got Style: Handling Label Style Bias for Uncertain Image Segmentation*  
 ICLR 2023
