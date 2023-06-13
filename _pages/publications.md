@@ -75,18 +75,18 @@ Biomedical Engineering/Biomedizinische Technik, no. 62, pp. 171-181, 2017
 ### 2023
 Petersen, Ganz, Holm, Feragen  
 *On (assessing) the fairness of risk score models*  
-FAccT 2023
-[[arxiv]](https://arxiv.org/abs/2302.08851)
+[FAccT 2023](https://facctconference.org/)  
+[[Proceedings]](https://dl.acm.org/doi/10.1145/3593013.3594045) [[arxiv]](https://arxiv.org/abs/2302.08851) [[Code]](https://github.com/e-pet/risk-score-fairness)
 
 Zepf, Petersen, Frellsen, Feragen  
 *That Label's got Style: Handling Label Style Bias for Uncertain Image Segmentation*  
-ICLR 2023
-[[Accepted manuscript]](https://openreview.net/forum?id=wZ2SVhOTzBX)
+[ICLR 2023](https://iclr.cc/Conferences/2023)  
+[[Paper]](https://openreview.net/pdf?id=wZ2SVhOTzBX)
 
 ### 2022
 Petersen, Feragen, da Costa Zemsch, Henriksen, Wiese Christensen, Ganz  
 *Feature robustness and sex differences in medical imaging: a case study in MRI-based Alzheimer's disease detection*  
-MICCAI 2022  
+[MICCAI 2022](https://conferences.miccai.org/2022/en/)  
 [[arxiv]](https://arxiv.org/abs/2204.01737) [[Proceedings]](https://link.springer.com/chapter/10.1007/978-3-031-16431-6_9) [[Code]](https://github.com/e-pet/adni-bias)
 
 ### 2020
@@ -161,7 +161,7 @@ Annual Conference of the German Society for Biomedical Engineering (DGBMT), Aach
 
 ## Theses
 *Model-based Probabilistic Inference for Monitoring Respiratory Effort using the Surface Electromyogram*  
-Ph.D. thesis, University of Lübeck, currently under review
+Ph.D. thesis, University of Lübeck, 2022
 
 *Integrative Mathematical Modelling and Simulation of Surface Electromyographic Measurements*  
 M.Sc. thesis, University of Hamburg, 2015
