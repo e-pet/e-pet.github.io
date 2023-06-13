@@ -132,10 +132,16 @@ Petersen
 *A Mathematical Model of Surface Electromyographic Measurements*  
 Proceedings of the Workshop Biosignal Processing, Germany, 2016
 
+## Commentaries
+Holm, Petersen, Ganz, Feragen  
+*Bias in context: What to do when complete bias removal is not an option*  
+Proceedings of the National Academy of Sciences (PNAS), 2023  
+[[Link]](https://www.pnas.org/doi/10.1073/pnas.2304710120)
+
 ## Book reviews
 Petersen  
 Book Review: Is AI Good for the Planet? (Benedetta Brevini)  
-Prometheus  
+Prometheus, 2022  
 [[Official link]](https://www.scienceopen.com/hosted-document?doi=10.13169/prometheus.38.2.0246) [[Current version]](https://e-pet.github.io/posts/2022/2022-05-20-is-ai-good-for-the-planet/)  
 There are, unfortunately, some editing mistakes in the version published by the journal. Please prefer the version published on this website ("current version") over the journal version.
 
