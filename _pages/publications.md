@@ -14,6 +14,12 @@ Petersen, Ferrante, Ganz, Feragen
 
 
 ## Journal publications
+### 2023
+Petersen, Holm, Ganz, Feragen  
+*The path toward equal performance in medical machine learning*  
+Patterns, vol. 4, issue 7, 100790, 2023  
+[[Link]](https://doi.org/10.1016/j.patter.2023.100790)
+
 ### 2022
 Petersen, Potdevin, Mohammadi, Zidowitz, Breyer, Nowotka, Henn, Pechmann, Leucker, Rostalski, Herzog  
 *Responsible and Regulatory Conform Machine Learning for Medicine: A Survey of Challenges and Solutions*  
