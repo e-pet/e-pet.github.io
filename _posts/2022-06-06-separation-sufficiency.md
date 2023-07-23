@@ -9,6 +9,8 @@ tags:
   - Algorithmic Fairness
 ---
 
+**TL;DR:** Calibration by group and error rate parity across groups *are* compatible.
+
 In the field of algorithmic fairness, it is well known that there are several definitions of fairness that are impossible to reconcile except in (practically irrelevant) corner cases.
 In this context, I have recently tried to wrap my head around why – intuitively – it is impossible for any classifier to achieve *separation* and *sufficiency* at the same time (unless either the classifier is a perfect classifier or there are no base rate differences between groups – we will get to these details in a minute).
 Since part of my troubles arose from a misunderstanding of what separation and sufficiency actually mean, let us start by revisiting their definitions.
@@ -157,10 +159,12 @@ There is no reason to expect this to be true, and the only way of enforcing this
 Of course, when there are large discrepancies in discriminative performance for different groups (as indicated, e.g., by widely differing AUROC values), one should, firstly, try to improve performance in the underperforming group (by, e.g., changing the model, gathering more data, or accounting for measurement biases) and, secondly, be transparent about these performance disparities as they will impact downstream applications of the model.
 Nevertheless, this will almost surely not lead to identical ROC curves for the different groups, and, thus, calibration by group and (exact) error rate balance will still not be achievable at the same time.
 
-### References
-- Kleinberg, Mullainathan, Raghavan (2016) *Inherent Trade-Offs in the Fair Determination of Risk Scores.* [arxiv link](http://arxiv.org/abs/1609.05807v2)
-- Barocas, Hardt, Narayanan (2021) *Fairness and Machine Learning*. <https://fairmlbook.org/>. **Note**: The discussion of separation in the book's current version (based on Hardt, Price, Srebro (2016), *Equality of Opportunity in Supervised Learning*) emphasizes assessing separation w.r.t. the classifier's _predictions_ $\hat{y}\in\lbrace 0,1 \rbrace$. This differs from the setting discussed above and by Kleinberg et al. (2016), where we consider separation w.r.t. the _risk scores_ $r\in [0,1]$.
-- Alexandra Chouldechova (2017) *Fair prediction with disparate impact: A study of bias in recidivism prediction instruments.* [arxiv link](https://arxiv.org/pdf/1610.07524.pdf)
+### Annotated references
+- Kleinberg, Mullainathan, Raghavan (2016), *Inherent Trade-Offs in the Fair Determination of Risk Scores.* [arxiv link](http://arxiv.org/abs/1609.05807v2) Their result is that calibration by group and equality of the average scores in the positive / negative groups cannot hold at the same time. The latter is *not* the same as error rate parity.
+- Barocas, Hardt, Narayanan (2021), *Fairness and Machine Learning*. <https://fairmlbook.org/>, specifically the [chapter on classification](https://fairmlbook.org/classification.html). They show that separation and sufficiency are incompatible. Sufficiency implies calibration by groups. *If applied to a binary classifier*, separation implies error rate parity. The issue is that we want error rate parity (~separation) for the *classifier* (--> output in ${0,1}$) and calibration (~sufficiency) for the underlying *probability model* (--> output in $[0,1]$). The incompatibility result only applies if we want both for the same thing.
+- Alexandra Chouldechova (2017), *Fair prediction with disparate impact: A study of bias in recidivism prediction instruments.* [[Link]](https://doi.org/10.1089/big.2016.0047) Their result is that error rate parity and positive predictive value (PPV) equality are not compatible. PPV equality is *not* the same as calibration, and calibration does not imply PPV equality.
+- **Addendum, July 2023**: Claire Lazar Reich and Suhas Vijaykumar (FORC 2021), *A Possibility in Algorithmic Fairness: Can Calibration and Equal Error Rates Be Reconciled?* [[Link]](https://drops.dagstuhl.de/opus/volltexte/2021/13872/pdf/LIPIcs-FORC-2021-4.pdf). Very nice discussion of the compatibility of the two properties.
+
 
 [^1]: Moritz Hardt very kindly pointed out to me that average score balance as defined in equations (1) and (2) is a *necessary* but not a *sufficient* condition for separation.
 
