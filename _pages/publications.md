@@ -84,6 +84,11 @@ Petersen, Ganz, Holm, Feragen
 [FAccT 2023](https://facctconference.org/)  
 [[Proceedings]](https://dl.acm.org/doi/10.1145/3593013.3594045) [[arxiv]](https://arxiv.org/abs/2302.08851) [[Code]](https://github.com/e-pet/risk-score-fairness)
 
+Weng, Bigdeli, Petersen, Feragen  
+*Are Sex-based Physiological Differences the Cause of Gender Bias for Chest X-ray Diagnosis?*  
+[FAIMI Workshop @ MICCAI 2023](https://faimi-workshop.github.io/2023-miccai/)  
+[[arxiv]](https://arxiv.org/abs/2308.05129)
+
 Zepf, Petersen, Frellsen, Feragen  
 *That Label's got Style: Handling Label Style Bias for Uncertain Image Segmentation*  
 [ICLR 2023](https://iclr.cc/Conferences/2023)  
