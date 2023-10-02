@@ -178,7 +178,8 @@ Annual Conference of the German Society for Biomedical Engineering (DGBMT), Aach
 
 ## Theses
 *Model-based Probabilistic Inference for Monitoring Respiratory Effort using the Surface Electromyogram*  
-Ph.D. thesis, University of Lübeck, 2022
+Ph.D. thesis, University of Lübeck, 2022  
+[[Link]](https://github.com/e-pet/e-pet.github.io/blob/cc49300f456d60987c8bff8eb09b3eaf139caa43/files/Dissertation%20Petersen.pdf)
 
 *Integrative Mathematical Modelling and Simulation of Surface Electromyographic Measurements*  
 M.Sc. thesis, University of Hamburg, 2015
