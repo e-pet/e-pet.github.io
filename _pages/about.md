@@ -15,10 +15,10 @@ In my current research within the project [Bias and Fairness in Medicine](http:/
 
 > What does it mean for a data-driven health risk score model to be "fair"? How can we test whether a model *is* fair, and how can we *design* such a model?
 
-Allow me to elaborate just a tiny bit. Health risk score models are likely to be used for *resource prioritization* in the healthcare system, for example by influencing who gets access to acute care and who does not.[^1] As these are decisions that influence human livelihoods, we – as a society – would obviously want these decisions to be made "fairly". But what does *fairness* even mean in this context?
+Allow me to elaborate just a tiny bit. Health risk score models are likely to be used for *resource prioritization* in the healthcare system, for example by influencing who gets access to extra preventive care and who does not.[^1] As these are decisions that influence human livelihoods, we – as a society – would obviously want these decisions to be made "fairly". But what does *fairness* even mean in this context?
 - Should men and women (on average) get an identical amount of extra care?
 - What if a disease has a higher prevalence in a certain group?
-- What if certain groups are especially affected by a disease, but it is impossible to identify these groups based on available data?
+- What if we are better at identifying the high-risk patients in one group compared to another? Also, why would this happen in the first place?
 - What if the data that are available are *biased* due to (historical or present-day) societal biases, such as poor patients having worse access to medical treatment compared to rich patients?
 
 Once the *philosophical* question of which fairness definition to pursue is answered, various *technical* questions arise: how can the fairness of a model be *quantified*, and how can we actively *build* a model that is fair in the chosen sense? 
