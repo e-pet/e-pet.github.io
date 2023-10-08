@@ -9,7 +9,7 @@ redirect_from:
 {% include base_path %}
 
 ### Positions
-* *2021-today:* **Post-doctoral researcher**, DTU Compute, Technical University of Denmark.
+* *2021-today:* **Post-doctoral researcher**, DTU Compute, Technical University of Denmark. Affiliated with [Denmark's Pioneer Centre for AI](https://aicentre.dk/) and the [Center for Basic Machine Learning Research in Life Science](https://mlls.dk/).
 * *2015-2021:* **Research Associate / Ph.D. student**, Institute for Electrical Engineering in Medicine, University of Lübeck, Germany.
 * *2009-2015:* **Student trainee**, Dräger Medical, Lübeck, Germany.
 * *2011:* **Research & teaching assistant**, Technical University of Hamburg, Germany.
