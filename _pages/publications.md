@@ -14,6 +14,12 @@ Petersen, Ferrante, Ganz, Feragen
 
 
 ## Journal publications
+### 2024
+Jonkman, et al.  
+*Analysis and applications of respiratory surface EMG: report of a round table meeting*  
+Critical Care, vol. 28, issue 1  
+[[Link]](https://link.springer.com/article/10.1186/s13054-023-04779-x)
+
 ### 2023
 Petersen, Holm, Ganz, Feragen  
 *The path toward equal performance in medical machine learning*  
@@ -77,6 +83,16 @@ Biomedical Engineering/Biomedizinische Technik, no. 62, pp. 171-181, 2017
 
 
 ## Conference publications
+### 2024
+Weng, Pegios, Petersen, Feragen, Bigdeli  
+*Fast Diffusion-Based Counterfactuals for Shortcut Removal and Generation*  
+[ECCV 2024](https://eccv.ecva.net/Conferences/2024)  (*Spotlight*)  
+[[Proceedings]](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/11674.pdf) [[arxiv]](https://arxiv.org/abs/2312.14223) [[Project page]](https://fastdime.compute.dtu.dk/) [[Code 1]](https://github.com/ppegiosk/FastDiME_CelebA)  [[Code 2]](https://github.com/nina-weng/FastDiME_Med)
+
+Olesen, Weng, Feragen, Petersen  
+*Slicing Through Bias: Explaining Performance Gaps in Medical Image Analysis Using Slice Discovery Methods*  
+[FAIMI Workshop @ MICCAI 2024](https://faimi-workshop.github.io/2024-miccai/)  
+[[Proceedings]](https://link.springer.com/chapter/10.1007/978-3-031-72787-0_1) [[arxiv]](https://arxiv.org/abs/2406.12142)  [[Code]](https://github.com/volesen/slicing-through-bias)
 
 ### 2023
 Petersen, Ganz, Holm, Feragen  
@@ -84,15 +100,20 @@ Petersen, Ganz, Holm, Feragen
 [FAccT 2023](https://facctconference.org/)  
 [[Proceedings]](https://dl.acm.org/doi/10.1145/3593013.3594045) [[arxiv]](https://arxiv.org/abs/2302.08851) [[Code]](https://github.com/e-pet/risk-score-fairness)
 
-Weng, Bigdeli, Petersen, Feragen  
-*Are Sex-based Physiological Differences the Cause of Gender Bias for Chest X-ray Diagnosis?*  
-[FAIMI Workshop @ MICCAI 2023](https://faimi-workshop.github.io/2023-miccai/)  
-[[arxiv]](https://arxiv.org/abs/2308.05129)
-
 Zepf, Petersen, Frellsen, Feragen  
 *That Label's got Style: Handling Label Style Bias for Uncertain Image Segmentation*  
 [ICLR 2023](https://iclr.cc/Conferences/2023)  
 [[Paper]](https://openreview.net/pdf?id=wZ2SVhOTzBX)
+
+Weng, Bigdeli, Petersen, Feragen  
+*Are Sex-based Physiological Differences the Cause of Gender Bias for Chest X-ray Diagnosis?*  
+[FAIMI Workshop @ MICCAI 2023](https://faimi-workshop.github.io/2023-miccai/)  
+[[Proceedings]](https://link.springer.com/chapter/10.1007/978-3-031-45249-9_14) [[arxiv]](https://arxiv.org/abs/2308.05129) [[Code]](https://github.com/nina-weng/detecting_causes_of_gender_bias_chest_xrays)
+
+Pegios, et al.  
+*Leveraging Shape and Spatial Information for Spontaneous Preterm Birth Prediction*  
+[ASMUS Workshop @ MICCAI 2023](https://link.springer.com/book/10.1007/978-3-031-44521-7)  
+[[Proceedings]](https://link.springer.com/chapter/10.1007/978-3-031-44521-7_6)
 
 ### 2022
 Petersen, Feragen, da Costa Zemsch, Henriksen, Wiese Christensen, Ganz  
