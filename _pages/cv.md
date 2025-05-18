@@ -9,7 +9,7 @@ redirect_from:
 {% include base_path %}
 
 ### Positions
-* *2024-today:* **Senior Scientist Medical AI**, [Fraunhofer Institute for Digital Medicine MEVIS](https://www.mevis.fraunhofer.de/), Bremen / Hannover, Germany. Co-afiliated with the [Institute for Interventional and Diagnostic Radiology](https://www.mhh.de/institut-fuer-diagnostische-und-interventionelle-radiologie) at [Hannover Medical School (MHH)](https://www.mhh.de/en/).
+* *2024-today:* **Senior Scientist Medical AI**, [Fraunhofer Institute for Digital Medicine MEVIS](https://www.mevis.fraunhofer.de/), Bremen / Hannover, Germany. Co-affiliated with the [Institute for Interventional and Diagnostic Radiology](https://www.mhh.de/institut-fuer-diagnostische-und-interventionelle-radiologie) at [Hannover Medical School (MHH)](https://www.mhh.de/en/).
 * *2021-2024:* **Post-doctoral researcher**, DTU Compute, Technical University of Denmark. Co-affiliated with [Denmark's Pioneer Centre for AI](https://aicentre.dk/) and the [Center for Basic Machine Learning Research in Life Science](https://mlls.dk/).
 * *2015-2021:* **Research Associate / Ph.D. student**, Institute for Electrical Engineering in Medicine, University of Lübeck, Germany.
 * *2009-2015:* **Student trainee**, Dräger Medical, Lübeck, Germany.
@@ -34,5 +34,5 @@ redirect_from:
 ### Awards
 * 2024: I was awarded the [Bernd-Fischer-award](https://www.uni-luebeck.de/aktuelles/die-preise-der-universitaet/bernd-fischer-preis.html?draft=1) for the best STEM Ph.D. thesis at Lübeck University.
 * 2023: I was a highlighted reviewer at the NeurIPS XAI In Action Workshop.
-* 2022: [My Ph.D. thesis] was awared the highest grade (_summa cum laude_).
+* 2022: [My Ph.D. thesis](https://e-pet.github.io/files/Dissertation%20Petersen.pdf) was awared the highest grade (_summa cum laude_).
 * 2020 [award for patient safety in medical engineering](https://www.ime.uni-luebeck.de/service/aktuelles/news/article/eike-petersen-receives-award-for-patient-safety-in-medical-engineering.html) by the German association for biomedical technology (DGBMT) and the Aktionsbündnis Patientensicherheit (APS), 2nd place. (For our work on surface EMG-based monitoring of respiratory effort, specifically these two papers: [[1]](https://ieeexplore.ieee.org/document/8988257), [[2]](https://www.sciencedirect.com/science/article/pii/S2405896320309654).)
