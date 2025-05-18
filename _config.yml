@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Eike Petersen"
 title_separator          : "-"
 name                     : &name "Eike Petersen"
-description              : &description "Postdoctoral researcher at Technical University of Denmark (DTU)"
+description              : &description "Senior Scientist at Fraunhofer Institute for Digital Medicine MEVIS"
 url                      : https://e-pet.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "e-pet/e-pet.github.io"
@@ -82,16 +82,17 @@ analytics:
 author:
   name             : "Eike Petersen"
   avatar           : "3244online.jpg"
-  bio              : "Postdoctoral Researcher<br>Fair, robust, explainable ML"
-  location         : "Copenhagen, Denmark"
-  employer         : "DTU Compute"
+  bio              : "Senior Scientist<br>Fair, robust, explainable medical AI/ML"
+  location         : "Hannover, Germany"
+  employer         : "Fraunhofer Institute for Digital Medicine MEVIS"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=juRQtRgAAAAJ"
-  email            : "ewipe@dtu.dk"
+  email            : "eike.petersen@mevis.fraunhofer.de"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
+  bluesky          : "epet.bsky.social"
   dribbble         :
   flickr           :
   facebook         :
@@ -110,7 +111,7 @@ author:
   stackoverflow    : "2207840/jhin"
   steam            :
   tumblr           :
-  twitter          : "eikepetersen1"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
