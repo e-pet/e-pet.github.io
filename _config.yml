@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Eike Petersen"
   avatar           : "3244online.jpg"
-  bio              : "Senior Scientist<br>Fair, robust, explainable medical AI/ML"
+  bio              : "Senior Scientist<br><br>Fair, robust, explainable medical AI/ML"
   location         : "Hannover, Germany"
-  employer         : "Fraunhofer Institute for Digital Medicine MEVIS"
+  employer         : "Fraunhofer Institute for Digital<br>Medicine MEVIS"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=juRQtRgAAAAJ"
   email            : "eike.petersen@mevis.fraunhofer.de"
@@ -92,7 +92,7 @@ author:
   uri              :
   bitbucket        :
   codepen          :
-  bluesky          : "epet.bsky.social"
+  bsky             : "epet.bsky.social"
   dribbble         :
   flickr           :
   facebook         :
