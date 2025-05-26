@@ -10,20 +10,28 @@ redirect_from:
 
 **Hi there, I'm Eike.**
 
-I am a postdoctoral researcher at [DTU Compute](https://www.compute.dtu.dk/english), in the section for [Visual Computing](https://www.compute.dtu.dk/english/research/Research-sections/Visual-Computing).
-In my current research within the project [Bias and Fairness in Medicine](http://fairmed.compute.dtu.dk/), I (together with my amazing [collaborators](http://fairmed.compute.dtu.dk/team.php)) attempt to answer the following questions: 
+I am a Senior Scienstist working in Medical AI at [Fraunhofer Institute for Digital Medicine MEVIS](https://www.mevis.fraunhofer.de/) and a guest researcher at the radiology department of [Hannover Medical School (MHH)](https://www.mhh.de/en/).
 
-> What does it mean for a data-driven health risk score model to be "fair"? How can we test whether a model *is* fair, and how can we *design* such a model?
+In my research, I aim to contribute to the robustness, fairness, and overall trustworthiness of AI and machine learning models in medicine. This encompasses questions such as:
+- [Do models perform equally well in different patient populations](https://dl.acm.org/doi/10.1145/3593013.3594045) - and if not, [what is the underlying reason for this performance disparity](https://link.springer.com/chapter/10.1007/978-3-031-45249-9_14) and [how can we make models better](https://www.cell.com/patterns/fulltext/S2666-3899(23)00145-9)?
+- Are models truly diagnosing the health and disease of patients, or do they merely *appear* to do so - e.g., by [relying on shortcuts](https://arxiv.org/abs/2406.12142)?
+- Is it possible for models to be agnostic (invariant) to patient demographics - and [is this actually desirable](https://arxiv.org/abs/2305.01397)?
 
-Allow me to elaborate just a tiny bit. Health risk score models are likely to be used for *resource prioritization* in the healthcare system, for example by influencing who gets access to extra preventive care and who does not.[^1] As these are decisions that influence human livelihoods, we – as a society – would obviously want these decisions to be made "fairly". But what does *fairness* even mean in this context?
-- Should men and women (on average) get an identical amount of extra care?
-- What if a disease has a higher prevalence in a certain group?
-- What if we are better at identifying the high-risk patients in one group compared to another? Also, why would this happen in the first place?
-- What if the data that are available are *biased* due to (historical or present-day) societal biases, such as poor patients having worse access to medical treatment compared to rich patients?
+While I mostly work in deep learning-based medical image analysis, my interests also span the broader medical domain, including, e.g., EHR and time series data.
 
-Once the *philosophical* question of which fairness definition to pursue is answered, various *technical* questions arise: how can the fairness of a model be *quantified*, and how can we actively *build* a model that is fair in the chosen sense? 
+I am also a co-organizer of the [FAIMI initiative for the fairness of AI in medical imaging](https://faimi.org/). We regularly organize workshops and other events - if you want to keep up to date with what we're doing, you should [sign up for our newsletter](https://faimi-workshop.github.io/newsletter/) or [join our Slack community](https://join.slack.com/t/faimiworkspace/shared_invite/zt-2zni1tswk-QnGfwJT5UlL21QXYHRKVvg)!
+
+Finally, I am also involved in the AI Act's implementation in terms of harmonized technical standards. Specifically, I am contributing to the development of a technical standard on bias assessment and mitigation in [CEN/CENELEC JTC21](https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence/), first via [the Dutch NGO AlgorithmAudit](https://algorithmaudit.eu/) and now via [NoLeFa-84](https://nolefa.eu/what-we-do/).
+
 
 **Recent news**
+- Markus Wenzel heroically stood in for me (I was sick) and single-handedly held our jointly prepared workshop on "AI-based Medical Imaging: Fairness in Models and Causality in Images" at SPIE Medical Imaging 2025. (Feb '25)
+- My Ph.D. thesis was awarded the [Bernd Fischer award](https://www.uni-luebeck.de/aktuelles/die-preise-der-universitaet/bernd-fischer-preis.html?draft=1) for the best MINT thesis at Uni Lübeck. (Dec '24)
+- Nina Weng presented [our work on slice discovery and failure mode discovery as well as the connection between shortcut learning and demographic biases](https://link.springer.com/chapter/10.1007/978-3-031-72787-0_1) at our MICCAI 2024 FAIMI workshop. (Oct '24)
+- My amazing collaborators from DTU have presented our (well, primarily their!) work on [Fast Diffusion-Based Counterfactuals for Shortcut Removal and Generation](https://fastdime.compute.dtu.dk/) as an Oral at ECCV 2024. (Sep '24)
+- A *really* new chapter has begun! I have become the father of beautiful twins. (Apr '24)
+- A new chapter has begun! I moved from DTU to [Fraunhofer Institute for Digital Medicine MEVIS](https://www.mevis.fraunhofer.de/). (I am also co-affiliated with [the radiology department](https://www.mhh.de/institut-fuer-diagnostische-und-interventionelle-radiologie) of [Hannover Medical School (MHH)](https://www.mhh.de/en/).) Thank you for a wonderful time at DTU and for a very warm welcome at MEVIS! (Feb '24)
+- I have joined [AlgorithmAudit](https://algorithmaudit.eu/) as a member of their AI Act Standardization team and will represent them in CEN/CENELEC JTC 21, contributing to the development of a harmonized standard for bias assessment and mitigation. (Dec '23)
 - I am co-organizing two exciting events on fair AI in medical imaging this fall, [a workshop at MICCAI](https://faimi-workshop.github.io/2023-miccai/) and [a free, online symposium in November](https://faimi-workshop.github.io/2023-online/). Be sure to join in if you're interested in these topics! We have an exciting line-up for both. (Sep '23)
 - Our Cell Press Patterns perspective piece [The Path Toward Equal Performance in Medical Machine Learning](https://www.cell.com/patterns/fulltext/S2666-3899(23)00145-9) is out! Find a short summary [here](https://e-pet.github.io/posts/2023/2023-07-23-path/). (July '23)
 - Presenting [our work on risk score fairness and metric choices](https://dl.acm.org/doi/10.1145/3593013.3594045) at the very inspiring [FAccT'23 conference](https://facctconference.org/) in Chicago! Also, we have published [a preprint on the fairness of demographic invariance in medical imaging](https://arxiv.org/abs/2305.01397) and [a PNAS commentary on what to do when complete bias removal is not an option](https://www.pnas.org/doi/10.1073/pnas.2304710120) (May/June '23).
@@ -36,9 +44,10 @@ Once the *philosophical* question of which fairness definition to pursue is answ
 - Co-organizing a [recurring seminar series on responsible AI](http://fairmed.compute.dtu.dk/seminar.php) now! Accessible via Zoom, everyone welcome. :-) (Dec '21)
 - Started as a postdoc at DTU Compute with Aasa Feragen and Melanie Ganz (Sep '21)
 
-**Previously**, I worked at the [University of Lübeck](https://www.uni-luebeck.de/en/university/university.html), in the [Institute for Electrical Engineering in Medicine](https://www.ime.uni-luebeck.de/institute.html). 
+**Previously**, I was a postdoctoral researcher at [DTU Compute](https://www.compute.dtu.dk/english), in the section for [Visual Computing](https://www.compute.dtu.dk/english/research/Research-sections/Visual-Computing).
+Within the project [Bias and Fairness in Medicine](http://fairmed.compute.dtu.dk/), I (together with my amazing [collaborators](http://fairmed.compute.dtu.dk/team.php)) worked on [the fairness of *risk score models* in medicine](https://dl.acm.org/doi/10.1145/3593013.3594045).
+
+**Pre-Previously**, I worked at the [University of Lübeck](https://www.uni-luebeck.de/en/university/university.html), in the [Institute for Electrical Engineering in Medicine](https://www.ime.uni-luebeck.de/institute.html). 
 In a project executed together with the research unit of [Dräger Medical](https://www.draeger.com/en-us_us/Home), we worked hard to bring *surface electromyographic monitoring of respiratory effort* into clinical practice for improving mechanical ventilation.
 My research in this context spanned mathematical modeling, signal processing, parameter identification & statistical inference, all related to either surface electromyographic measurements, respiration, or both.
 See my previous [publications](publications.md) for some of the work we did.
-
-[^1]: I am not saying that I believe this is a good idea. I'm just saying: it's likely to happen, and, in fact, [already happening](https://www.science.org/doi/10.1126/science.aax2342). That does not mean that we, as a society, should not [actively](https://afog.berkeley.edu/programs/the-refusal-conference#overview) [decide](https://www.radicalai.org/) whether we want it to happen or [not](https://bristoluniversitypress.co.uk/resisting-ai).
